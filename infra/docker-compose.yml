@@ -1,0 +1,428 @@
+# AutoML Research Lab — real services (Phase C). wandb-mcp behind profile "wandb".
+
+name: automl-research-lab
+
+services:
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks: [automl]
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.17.2
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri sqlite:///mlflow.db
+      --default-artifact-root /mlflow/artifacts
+    volumes:
+      - mlflow_data:/mlflow
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 15s
+    ports:
+      - "5050:5000"
+    networks: [automl]
+
+  wandb-mcp:
+    profiles: ["wandb"]
+    image: ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+    environment:
+      WANDB_API_KEY: ${WANDB_API_KEY:-}
+    command: >
+      uvx wandb-mcp-server --transport http --port 8080
+    expose:
+      - "8080"
+    networks: [automl]
+
+  # --- Assignment: Postgres data warehouse written by the Airflow DAG, read by the agent loop ---
+  warehouse-db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: warehouse
+      POSTGRES_PASSWORD: warehouse
+      POSTGRES_DB: warehouse
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U warehouse -d warehouse"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - warehouse_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # psql -h localhost -p 5433 -U warehouse warehouse
+    networks: [automl]
+
+  gateway:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: gateway
+        PORT: "8000"
+    # Repo-root .env (compose file lives in infra/)
+    env_file:
+      - ../.env
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      GATEWAY_DEFAULT_MODE: ${GATEWAY_DEFAULT_MODE:-live}
+      MOCK_DATASET_SERVICE: ${MOCK_DATASET_SERVICE:-false}
+      DATASET_SERVICE_URL: http://dataset_service:8004
+      ORCHESTRATOR_URL: http://orchestrator:8001
+      AGENT_SERVICE_URL: http://agent_service:8002
+      HARNESS_SERVICE_URL: http://harness:8003
+      MEMORY_SERVICE_URL: http://memory_service:8005
+      TRACKING_SERVICE_URL: http://tracking_service:8006
+      GATEWAY_SELF_URL: http://127.0.0.1:8000
+      REDIS_URL: redis://redis:6379/0
+      BUNDLED_CSV: /bundled/churn_sample.csv
+      DATASETS_DIR: /bundled
+      PROJECT_DATA_DIR: /data/projects
+      LOOP_RUNS_PATH: /data/loop_runs/runs.json
+      SOLUTION_LOOP_ROOT: /packages/solution/langgraph
+      LAB_LOOP_ROOT: /packages/lab/langgraph
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-nvidia/nemotron-3.5-lightning:free}
+      CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+      # Fraud loop warehouse_loader reads the Airflow output from here
+      WAREHOUSE_DSN: postgresql://warehouse:warehouse@warehouse-db:5432/warehouse
+    volumes:
+      # rw so uploaded CSVs can be reused via the prior-datasets dropdown
+      - ../datasets:/bundled
+      - ../lab:/packages/lab
+      - ../solution:/packages/solution
+      # Shared LLM/train helpers imported by both graphs (not a student paste target)
+      - ../loop_runtime.py:/app/loop_runtime.py
+      - ../mocks/recordings:/app/mocks/recordings:ro
+      - project_data:/data/projects
+      - loop_runs_data:/data/loop_runs
+    depends_on:
+      redis:
+        condition: service_healthy
+      dataset_service:
+        condition: service_healthy
+      orchestrator:
+        condition: service_healthy
+      warehouse-db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+    networks: [automl]
+
+  orchestrator:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: orchestrator
+        PORT: "8001"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      HARNESS_TOKEN: ${HARNESS_TOKEN:-${SERVICE_TOKEN:-dev-service-token}}
+      MOCK_ORCHESTRATOR: ${MOCK_ORCHESTRATOR:-false}
+      AGENT_SERVICE_URL: http://agent_service:8002
+      TRACKING_SERVICE_URL: http://tracking_service:8006
+      MEMORY_SERVICE_URL: http://memory_service:8005
+      DATASET_SERVICE_URL: http://dataset_service:8004
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+      agent_service:
+        condition: service_healthy
+      tracking_service:
+        condition: service_healthy
+      memory_service:
+        condition: service_healthy
+      dataset_service:
+        condition: service_healthy
+    ports:
+      - "8011:8001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks: [automl]
+
+  agent_service:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: agent_service
+        PORT: "8002"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      MOCK_AGENT_SERVICE: ${MOCK_AGENT_SERVICE:-false}
+      HARNESS_SERVICE_URL: http://harness:8003
+      MEMORY_SERVICE_URL: http://memory_service:8005
+      WANDB_MCP_URL: http://wandb-mcp:8080
+      LLM_PROVIDER: ${LLM_PROVIDER:-cursor}
+      LLM_MODEL: ${LLM_MODEL:-composer-2.5}
+      CURSOR_API_KEY: ${CURSOR_API_KEY:-}
+      # Set AGENT_LLM_ENABLED=true to call Composer 2.5 on LLM subagents (slower live SSE).
+      AGENT_LLM_ENABLED: ${AGENT_LLM_ENABLED:-false}
+    depends_on:
+      harness:
+        condition: service_healthy
+      memory_service:
+        condition: service_healthy
+    ports:
+      - "8002:8002"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8002/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks: [automl]
+
+  harness:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: harness
+        PORT: "8003"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      HARNESS_TOKEN: ${HARNESS_TOKEN:-${SERVICE_TOKEN:-dev-service-token}}
+      MOCK_HARNESS: ${MOCK_HARNESS:-false}
+      DATASET_SERVICE_URL: http://dataset_service:8004
+      ARTIFACT_ROOT: /artifacts
+    volumes:
+      - harness_artifacts:/artifacts
+    depends_on:
+      dataset_service:
+        condition: service_healthy
+    ports:
+      - "8003:8003"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8003/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks: [automl]
+
+  dataset_service:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: dataset_service
+        PORT: "8004"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      HARNESS_TOKEN: ${HARNESS_TOKEN:-${SERVICE_TOKEN:-dev-service-token}}
+      MOCK_DATASET_SERVICE: ${MOCK_DATASET_SERVICE:-false}
+      DATASET_DATA_DIR: /data/datasets
+    volumes:
+      - dataset_data:/data/datasets
+      - harness_artifacts:/artifacts:ro
+      - ../datasets:/bundled:ro
+    ports:
+      - "8004:8004"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8004/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks: [automl]
+
+  memory_service:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: memory_service
+        PORT: "8005"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      MOCK_MEMORY_SERVICE: ${MOCK_MEMORY_SERVICE:-false}
+    ports:
+      - "8005:8005"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8005/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+    networks: [automl]
+
+  tracking_service:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.service
+      args:
+        SERVICE_DIR: tracking_service
+        PORT: "8006"
+    environment:
+      SERVICE_TOKEN: ${SERVICE_TOKEN:-dev-service-token}
+      MOCK_TRACKING_SERVICE: ${MOCK_TRACKING_SERVICE:-false}
+      WANDB_ENABLED: ${WANDB_ENABLED:-false}
+      WANDB_API_KEY: ${WANDB_API_KEY:-}
+      WANDB_PROJECT: ${WANDB_PROJECT:-automl-research-lab}
+      WANDB_ENTITY: ${WANDB_ENTITY:-}
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    ports:
+      - "8006:8006"
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8006/healthz')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    networks: [automl]
+
+  # --- Airflow (Docker-only classroom path; enable with --profile airflow) ---
+  airflow-db:
+    profiles: ["airflow"]
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - airflow_db:/var/lib/postgresql/data
+    networks: [automl]
+
+  airflow-init:
+    profiles: ["airflow"]
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.airflow
+    depends_on:
+      airflow-db:
+        condition: service_healthy
+      warehouse-db:
+        condition: service_healthy
+    environment: &airflow-common-env
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db/airflow
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY:-oTWC6DY6QwwfP7e31V1vCCipJr_eSju8hGTVr9yiJSU=}
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      # Classroom: reparse edited DAGs quickly (default 30s / 300s feels "not live")
+      AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: "5"
+      AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_ADMIN_USER:-admin}
+      _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD:-admin}
+      PYTHONPATH: /repo
+      SOLUTION_LOOP_GATEWAY_URL: http://gateway:8000
+      # Airflow connection id `warehouse_db` used by fraud_etl_pipeline
+      AIRFLOW_CONN_WAREHOUSE_DB: postgresql://warehouse:warehouse@warehouse-db:5432/warehouse
+    volumes: &airflow-common-volumes
+      - ../lab/airflow/dags:/opt/airflow/dags/lab
+      - ../solution/airflow/dags:/opt/airflow/dags/solution
+      - ..:/repo
+      - ../datasets:/repo/datasets
+      - ../solution/langgraph:/repo/solution/langgraph
+      - ../artifacts/airflow:/repo/artifacts/airflow
+    user: "0:0"
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        mkdir -p /repo/artifacts/airflow/runs /repo/artifacts/airflow/fraud_runs /repo/datasets/airflow /repo/reports/fraud_pipeline
+        chown -R airflow:root /repo/artifacts/airflow /repo/reports /opt/airflow
+        exec /entrypoint airflow version
+    networks: [automl]
+
+  airflow-webserver:
+    profiles: ["airflow"]
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.airflow
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      airflow-db:
+        condition: service_healthy
+    environment: *airflow-common-env
+    volumes: *airflow-common-volumes
+    user: "50000:0"
+    command: webserver
+    ports:
+      - "8088:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+    networks: [automl]
+
+  airflow-scheduler:
+    profiles: ["airflow"]
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.airflow
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      airflow-db:
+        condition: service_healthy
+    environment: *airflow-common-env
+    volumes: *airflow-common-volumes
+    user: "50000:0"
+    command: scheduler
+    networks: [automl]
+
+  # One-shot Docker runner for prep without opening the UI (still containerized).
+  airflow-prep-once:
+    profiles: ["airflow"]
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.airflow
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment: *airflow-common-env
+    volumes: *airflow-common-volumes
+    user: "0:0"
+    working_dir: /repo
+    entrypoint: ["python", "-m", "solution.langgraph.baseline"]
+    networks: [automl]
+
+networks:
+  automl:
+    driver: bridge
+
+volumes:
+  mlflow_data:
+  dataset_data:
+  harness_artifacts:
+  project_data:
+  loop_runs_data:
+  airflow_db:
+  warehouse_data:

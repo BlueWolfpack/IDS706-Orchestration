@@ -1,0 +1,180 @@
+{
+  "description": "SAMPLE FIXTURE — one failed trial, Error repair proposes one fix, retry succeeds.",
+  "mock": true,
+  "steps": [
+    {
+      "delay_ms": 20,
+      "type": "session_created",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "scenario": "repair", "note": "sample fixture session" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "ok",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": { "lead": "data_scientist", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": {
+        "lead": "hypothesis_generator",
+        "experiment_id": "e-1",
+        "model_family": "random_forest",
+        "hyperparameters": { "max_depth": -1 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "experiment_id": "e-1", "retry_count": 0 }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "subagent": "config_validator" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "tool_result",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": {
+        "tool": "validate_experiment",
+        "valid": false,
+        "errors": ["SAMPLE: max_depth must be null or >= 1, got -1"]
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_failed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1",
+        "reason": "invalid_config",
+        "retry_count": 0,
+        "note": "SAMPLE fixture failure"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "error_repair",
+      "payload": {
+        "subagent": "error_repair",
+        "retry_count": 0,
+        "note": "SAMPLE: one bounded fix only"
+      }
+    },
+    {
+      "delay_ms": 50,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "error_repair",
+      "payload": {
+        "subagent": "error_repair",
+        "fix": { "max_depth": 8 },
+        "retry_count": 1
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "subagent": "config_validator", "retry_count": 1 }
+    },
+    {
+      "delay_ms": 30,
+      "type": "tool_result",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "tool": "validate_experiment", "valid": true }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "experiment_id": "e-1-retry", "retry_count": 1 }
+    },
+    {
+      "delay_ms": 60,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1-retry",
+        "note": "SAMPLE fixture metrics after repair",
+        "validation_metrics": { "f1": 0.5 },
+        "retry_count": 1
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "status": "completed", "retry_count": 1 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "experiment_id": "e-1-retry", "action": "accept" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "holdout_evaluated",
+      "source_service": "dataset_service",
+      "source_agent": null,
+      "payload": {
+        "experiment_id": "e-1-retry",
+        "score": 0.47,
+        "note": "SAMPLE fixture holdout score"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "stop_reason": "accepted", "experiments_used": 1 }
+    },
+    {
+      "delay_ms": 20,
+      "type": "activity",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "message": "SAMPLE fixture scenario 'repair' complete", "done": true }
+    }
+  ]
+}

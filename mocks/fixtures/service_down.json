@@ -1,0 +1,173 @@
+{
+  "description": "SAMPLE FIXTURE — harness typed failure, bounded retry, terminal failed trial.",
+  "mock": true,
+  "steps": [
+    {
+      "delay_ms": 20,
+      "type": "session_created",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "scenario": "service_down", "note": "sample fixture session" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "ok",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": { "lead": "data_scientist", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": { "experiment_id": "e-1", "model_family": "logistic_regression" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "subagent": "experiment_runner" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "down",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        },
+        "note": "SAMPLE: harness marked down for failure demo"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "service_error",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": {
+        "code": "dependency_down",
+        "message": "SAMPLE: harness-service unreachable",
+        "retryable": true,
+        "dependency": "harness"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_failed",
+      "source_service": "orchestrator",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1",
+        "reason": "dependency_down",
+        "retry_count": 0,
+        "note": "SAMPLE typed failure"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "error_repair",
+      "payload": { "subagent": "error_repair", "retry_count": 0 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "error_repair",
+      "payload": {
+        "subagent": "error_repair",
+        "fix": { "action": "retry_same_config" },
+        "retry_count": 1
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "service_error",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": {
+        "code": "dependency_down",
+        "message": "SAMPLE: harness-service still unreachable",
+        "retryable": false,
+        "dependency": "harness"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_failed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": {
+        "experiment_id": "e-1",
+        "reason": "dependency_down",
+        "retry_count": 1,
+        "terminal": true,
+        "note": "SAMPLE: bounded retry exhausted"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": {
+        "lead": "ml_engineer",
+        "status": "failed",
+        "retry_count": 1,
+        "reason": "harness_unreachable"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": {
+        "stop_reason": "dependency_failure",
+        "failed_dependency": "harness",
+        "experiments_used": 1
+      }
+    },
+    {
+      "delay_ms": 20,
+      "type": "activity",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "message": "SAMPLE fixture scenario 'service_down' complete", "done": true }
+    }
+  ]
+}

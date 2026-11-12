@@ -1,0 +1,150 @@
+{
+  "description": "SAMPLE FIXTURE — stops at experiment budget without reaching target score.",
+  "mock": true,
+  "steps": [
+    {
+      "delay_ms": 20,
+      "type": "session_created",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "scenario": "budget_stop",
+        "target_score": 0.9,
+        "experiment_budget": 3,
+        "note": "sample fixture session"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "ok",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": { "lead": "data_scientist", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1",
+        "note": "SAMPLE fixture metrics",
+        "validation_metrics": { "f1": 0.4 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "experiment_id": "e-1", "action": "revise", "next_action": "try tree model" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "experiments_used": 1, "budget": 3, "best_val_f1": 0.4, "target_score": 0.9 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-2",
+        "note": "SAMPLE fixture metrics",
+        "validation_metrics": { "f1": 0.46 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "experiment_id": "e-2", "action": "revise" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "experiments_used": 2, "budget": 3, "best_val_f1": 0.46, "target_score": 0.9 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-3",
+        "note": "SAMPLE fixture metrics",
+        "validation_metrics": { "f1": 0.49 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": {
+        "experiment_id": "e-3",
+        "action": "stop",
+        "observation": "SAMPLE: budget exhausted before target"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "experiments_used": 3, "budget": 3, "best_val_f1": 0.49, "target_score": 0.9 }
+    },
+    {
+      "delay_ms": 50,
+      "type": "holdout_evaluated",
+      "source_service": "dataset_service",
+      "source_agent": null,
+      "payload": {
+        "experiment_id": "e-3",
+        "score": 0.44,
+        "note": "SAMPLE: best-so-far opened on holdout after budget stop"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": {
+        "stop_reason": "experiment_budget_exhausted",
+        "experiments_used": 3,
+        "target_met": false
+      }
+    },
+    {
+      "delay_ms": 20,
+      "type": "activity",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "message": "SAMPLE fixture scenario 'budget_stop' complete", "done": true }
+    }
+  ]
+}

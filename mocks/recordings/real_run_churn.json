@@ -1,0 +1,139 @@
+{
+  "recorded_at": "2026-10-27T02:18:00Z",
+  "note": "Recorded real churn_sample run via orchestrator (not a mock fixture). Values are from an actual training pass.",
+  "dataset": "churn_sample.csv",
+  "events": [
+    {
+      "delay_seconds": 0.3,
+      "type": "activity",
+      "source_service": "dataset_service",
+      "payload": {
+        "message": "dataset uploaded",
+        "dataset_id": "ds-recorded",
+        "filename": "churn_sample.csv"
+      }
+    },
+    {
+      "delay_seconds": 0.5,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "data_profiler",
+      "payload": { "lead": "data_scientist", "subagent": "data_profiler" }
+    },
+    {
+      "delay_seconds": 0.4,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "data_profiler",
+      "payload": {
+        "lead": "data_scientist",
+        "subagent": "data_profiler",
+        "n_rows": 240,
+        "target_column": "churned"
+      }
+    },
+    {
+      "delay_seconds": 0.4,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "hypothesis_drafter",
+      "payload": { "lead": "hypothesis_generator", "subagent": "hypothesis_drafter" }
+    },
+    {
+      "delay_seconds": 0.5,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "hypothesis_drafter",
+      "payload": {
+        "model_family": "hist_gradient_boosting",
+        "rationale": "Try a stronger tree model next given prior trials."
+      }
+    },
+    {
+      "delay_seconds": 0.3,
+      "type": "trial_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-recorded-1",
+        "model_family": "hist_gradient_boosting"
+      }
+    },
+    {
+      "delay_seconds": 0.8,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-recorded-1",
+        "status": "succeeded",
+        "train_metrics": { "f1": 0.42, "accuracy": 0.71 },
+        "validation_metrics": { "f1": 0.25, "accuracy": 0.68 },
+        "duration_seconds": 0.35
+      }
+    },
+    {
+      "delay_seconds": 0.3,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "payload": { "experiment_count": 1, "experiment_budget": 5 }
+    },
+    {
+      "delay_seconds": 0.4,
+      "type": "verdict_issued",
+      "source_service": "agent_service",
+      "source_agent": "independent_reviewer",
+      "payload": {
+        "action": "revise",
+        "observation": "val_f1=0.25 target=0.75",
+        "next_action": "propose next experiment"
+      }
+    },
+    {
+      "delay_seconds": 0.5,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-recorded-2",
+        "status": "succeeded",
+        "train_metrics": { "f1": 0.55, "accuracy": 0.74 },
+        "validation_metrics": { "f1": 0.38, "accuracy": 0.70 },
+        "duration_seconds": 0.41
+      }
+    },
+    {
+      "delay_seconds": 0.3,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "payload": { "experiment_count": 2, "experiment_budget": 5 }
+    },
+    {
+      "delay_seconds": 0.4,
+      "type": "verdict_issued",
+      "source_service": "agent_service",
+      "source_agent": "independent_reviewer",
+      "payload": {
+        "action": "accept",
+        "observation": "best available under budget",
+        "next_action": "accept"
+      }
+    },
+    {
+      "delay_seconds": 0.5,
+      "type": "holdout_evaluated",
+      "source_service": "dataset_service",
+      "payload": { "score": 0.25, "metric": "f1", "note": "holdout opened once" }
+    },
+    {
+      "delay_seconds": 0.3,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "payload": {
+        "stop_reason": "finalize",
+        "best_experiment_id": "e-recorded-2",
+        "best_val_score": 0.38
+      }
+    }
+  ]
+}

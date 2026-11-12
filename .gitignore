@@ -1,0 +1,52 @@
+# Secrets and local env
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.envrc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / frontend (Phase B+)
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# MLflow / artifacts
+mlruns/
+mlflow.db
+artifacts/
+*.pkl
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Docker
+.docker/
+
+# Simple-loop runtime memory
+mini_loop/memory/
+mini_loop/**/__pycache__/
+
+# Airflow publish (runtime)
+datasets/airflow/merged_latest.csv
+datasets/airflow/latest_handoff.json
+datasets/airflow/fraud_clean.csv
+lab/langgraph/runs/
+reports/fraud_pipeline/2*/

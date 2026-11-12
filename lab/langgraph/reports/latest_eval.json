@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-11-11T23:48:28+00:00",
+  "data_source": "postgres",
+  "target": "is_fraud",
+  "cycles": 3,
+  "stop_reason": "no_signal",
+  "dropped_for_leakage": [
+    "fraud_probability"
+  ],
+  "best_spec": {
+    "experiment_id": "exp-2",
+    "model_family": "random_forest",
+    "hyperparameters": {
+      "n_estimators": 300,
+      "max_depth": 10
+    },
+    "drop_columns": [
+      "customer_id",
+      "customer_since",
+      "fraud_probability",
+      "merchant_id",
+      "timestamp",
+      "transaction_id"
+    ],
+    "rationale": "Increasing n_estimators to 300 and max_depth to 10 systematically checks higher capacity while respecting the established drop list, allowing observation of F1/PR-AUC trends before considering family switches or regularization adjustments."
+  },
+  "best_val_f1": 0.0593,
+  "holdout": {
+    "f1": 0.0592,
+    "accuracy": 0.0305,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0305,
+    "recall": 1.0,
+    "threshold": 0.0786,
+    "confusion": {
+      "tn": 0,
+      "fp": 1939,
+      "fn": 0,
+      "tp": 61
+    },
+    "roc_auc": 0.4939,
+    "pr_auc": 0.0298,
+    "n_holdout": 2000,
+    "model_family": "random_forest"
+  },
+  "baseline_majority": {
+    "f1": 0.0,
+    "accuracy": 0.9695,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "threshold": 0.5,
+    "confusion": {
+      "tn": 1939,
+      "fp": 0,
+      "fn": 61,
+      "tp": 0
+    },
+    "roc_auc": 0.5,
+    "pr_auc": 0.0305
+  },
+  "baseline_always_positive": {
+    "f1": 0.0592,
+    "accuracy": 0.0305,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0305,
+    "recall": 1.0,
+    "threshold": 0.5,
+    "confusion": {
+      "tn": 0,
+      "fp": 1939,
+      "fn": 0,
+      "tp": 61
+    },
+    "roc_auc": 0.5,
+    "pr_auc": 0.0305
+  },
+  "f1_gain_vs_majority": 0.0592,
+  "pr_auc_lift_vs_prevalence": 0.971,
+  "experiments": [
+    {
+      "cycle": 1,
+      "family": "random_forest",
+      "val_f1": 0.0592,
+      "val_pr_auc": 0.026,
+      "verdict": "revise"
+    },
+    {
+      "cycle": 2,
+      "family": "random_forest",
+      "val_f1": 0.0593,
+      "val_pr_auc": 0.027,
+      "verdict": "revise"
+    },
+    {
+      "cycle": 3,
+      "family": "random_forest",
+      "val_f1": 0.0592,
+      "val_pr_auc": 0.026,
+      "verdict": "stop"
+    }
+  ]
+}

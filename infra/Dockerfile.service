@@ -1,0 +1,28 @@
+# Generic FastAPI service image. Build with:
+#   --build-arg SERVICE_DIR=gateway --build-arg PORT=8000
+FROM python:3.12-slim
+
+ARG SERVICE_DIR
+ARG PORT=8000
+
+WORKDIR /app
+
+# Shared contracts, mock fixtures, correlation middleware
+COPY contracts /app/contracts
+COPY mocks /app/mocks
+COPY pyproject.toml /app/pyproject.toml
+COPY advanced/services/__init__.py /app/services/__init__.py
+COPY advanced/services/_shared /app/services/_shared
+COPY advanced/services/${SERVICE_DIR} /app/services/${SERVICE_DIR}
+
+RUN pip install --no-cache-dir -r /app/services/${SERVICE_DIR}/requirements.txt \
+    && pip install --no-cache-dir /app
+
+ENV PYTHONPATH=/app:/app/services
+ENV SERVICE_DIR=${SERVICE_DIR}
+ENV PORT=${PORT}
+
+EXPOSE ${PORT}
+
+# Shell form so SERVICE_DIR / PORT expand at runtime.
+CMD uvicorn services.${SERVICE_DIR}.app.main:app --host 0.0.0.0 --port ${PORT}

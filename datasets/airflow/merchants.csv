@@ -1,0 +1,201 @@
+merchant_id,merchant_name,category,city,country,years_in_business,monthly_revenue,risk_score,fraud_history,online_store
+M00001,Merchant_1,Travel,Mumbai,India,6,6102009,0.5,Yes,No
+M00002,Merchant_2,Healthcare,Hyderabad,Germany,17,1153034,0.17,Yes,No
+M00003,Merchant_3,Healthcare,San Francisco,Canada,11,7808824,0.72,Yes,No
+M00004,Merchant_4,Entertainment,London,UK,30,6709027,0.07,No,No
+M00005,Merchant_5,Travel,Hyderabad,USA,19,8605716,0.78,No,Yes
+M00006,Merchant_6,Healthcare,Mumbai,Canada,19,5940068,0.58,No,Yes
+M00007,Merchant_7,Retail,Chennai,USA,8,1719679,0.67,No,No
+M00008,Merchant_8,Electronics,London,USA,25,4069777,0.11,Yes,No
+M00009,Merchant_9,Entertainment,Delhi,India,2,4302421,0.11,Yes,No
+M00010,Merchant_10,Entertainment,Mumbai,Canada,21,594247,0.92,No,Yes
+M00011,Merchant_11,Healthcare,Delhi,Germany,5,9726425,0.56,Yes,No
+M00012,Merchant_12,Travel,Delhi,UK,8,3475454,0.74,No,Yes
+M00013,Merchant_13,Retail,Hyderabad,India,21,1714070,0.2,Yes,Yes
+M00014,Merchant_14,Electronics,London,Germany,19,9270104,0.86,No,Yes
+M00015,Merchant_15,Healthcare,San Francisco,Canada,16,3289967,0.83,No,No
+M00016,Merchant_16,Electronics,Hyderabad,Canada,28,2413134,0.8,No,No
+M00017,Merchant_17,Healthcare,Delhi,India,19,1411035,0.13,No,Yes
+M00018,Merchant_18,Retail,Delhi,USA,2,9168723,0.33,Yes,No
+M00019,Merchant_19,Entertainment,Mumbai,Germany,23,6104652,0.07,Yes,No
+M00020,Merchant_20,Retail,Hyderabad,Canada,8,8786567,0.93,No,No
+M00021,Merchant_21,Food,Chennai,Canada,23,1960164,0.58,No,Yes
+M00022,Merchant_22,Retail,Mumbai,Germany,9,3464020,0.33,Yes,Yes
+M00023,Merchant_23,Grocery,Hyderabad,UK,30,1145698,0.24,Yes,Yes
+M00024,Merchant_24,Electronics,Chennai,Germany,20,1452134,0.89,No,Yes
+M00025,Merchant_25,Electronics,San Francisco,India,4,697270,0.5,Yes,No
+M00026,Merchant_26,Travel,Delhi,UK,26,3921097,0.02,Yes,Yes
+M00027,Merchant_27,Entertainment,London,USA,18,6465080,0.68,Yes,No
+M00028,Merchant_28,Retail,Delhi,Germany,23,2201134,0.43,No,Yes
+M00029,Merchant_29,Retail,Delhi,India,29,6269127,0.35,No,No
+M00030,Merchant_30,Retail,Bengaluru,USA,3,9975362,0.01,No,Yes
+M00031,Merchant_31,Entertainment,Chennai,USA,27,1054349,0.08,Yes,No
+M00032,Merchant_32,Grocery,Mumbai,India,11,5966446,0.6,Yes,No
+M00033,Merchant_33,Grocery,Hyderabad,Germany,16,2153134,0.66,Yes,No
+M00034,Merchant_34,Food,Bengaluru,Germany,23,6088766,0.9,Yes,No
+M00035,Merchant_35,Healthcare,Mumbai,UK,25,9351054,0.29,Yes,No
+M00036,Merchant_36,Electronics,San Francisco,Canada,17,1851175,0.05,No,No
+M00037,Merchant_37,Electronics,Chennai,USA,30,2400684,0.84,Yes,No
+M00038,Merchant_38,Healthcare,Hyderabad,USA,4,6347667,0.72,Yes,Yes
+M00039,Merchant_39,Grocery,San Francisco,Germany,21,7712879,0.95,Yes,No
+M00040,Merchant_40,Entertainment,Chennai,UK,9,9969032,0.38,Yes,Yes
+M00041,Merchant_41,Electronics,London,Canada,13,8410719,0.02,No,No
+M00042,Merchant_42,Travel,Chennai,USA,7,6464050,0.18,No,Yes
+M00043,Merchant_43,Healthcare,Mumbai,India,18,5935191,0.94,No,No
+M00044,Merchant_44,Entertainment,London,Canada,7,558775,0.34,No,No
+M00045,Merchant_45,Entertainment,San Francisco,India,26,1932243,0.55,No,No
+M00046,Merchant_46,Travel,Hyderabad,Canada,25,8805913,0.26,No,No
+M00047,Merchant_47,Healthcare,Bengaluru,USA,30,354735,0.28,No,Yes
+M00048,Merchant_48,Grocery,London,Canada,10,5762853,0.57,Yes,No
+M00049,Merchant_49,Electronics,Mumbai,UK,26,307016,0.12,No,No
+M00050,Merchant_50,Entertainment,Bengaluru,Germany,15,389686,0.44,No,Yes
+M00051,Merchant_51,Electronics,Delhi,Canada,7,6955353,0.06,Yes,No
+M00052,Merchant_52,Food,Hyderabad,UK,3,7489348,0.18,No,No
+M00053,Merchant_53,Entertainment,Delhi,USA,8,3027545,0.15,Yes,Yes
+M00054,Merchant_54,Retail,San Francisco,India,6,8601337,0.86,No,Yes
+M00055,Merchant_55,Food,San Francisco,USA,2,4446217,0.98,Yes,No
+M00056,Merchant_56,Food,San Francisco,India,20,4037559,0.35,Yes,No
+M00057,Merchant_57,Retail,Hyderabad,India,8,3523255,0.33,No,No
+M00058,Merchant_58,Retail,San Francisco,Germany,29,4849368,0.14,No,No
+M00059,Merchant_59,Electronics,Delhi,UK,16,5033559,0.62,Yes,No
+M00060,Merchant_60,Retail,Mumbai,USA,30,528411,0.11,Yes,No
+M00061,Merchant_61,Food,San Francisco,Canada,26,9855724,0.71,Yes,No
+M00062,Merchant_62,Entertainment,Hyderabad,India,22,2617835,0.38,Yes,Yes
+M00063,Merchant_63,Grocery,Hyderabad,Canada,19,9297823,0.73,Yes,Yes
+M00064,Merchant_64,Food,Delhi,Canada,17,7499044,0.32,Yes,No
+M00065,Merchant_65,Grocery,Mumbai,USA,26,6172764,0.23,No,Yes
+M00066,Merchant_66,Healthcare,Bengaluru,Germany,24,6977413,0.36,No,Yes
+M00067,Merchant_67,Electronics,San Francisco,Germany,20,3964628,0.45,No,Yes
+M00068,Merchant_68,Food,London,USA,30,9119698,0.24,No,Yes
+M00069,Merchant_69,Food,Mumbai,UK,11,5365434,0.12,No,No
+M00070,Merchant_70,Food,Bengaluru,Canada,16,3423637,0.9,No,Yes
+M00071,Merchant_71,Grocery,Chennai,Germany,9,9404287,0.71,No,Yes
+M00072,Merchant_72,Grocery,London,India,27,7338024,0.02,Yes,Yes
+M00073,Merchant_73,Grocery,Hyderabad,Canada,30,6611474,0.9,No,Yes
+M00074,Merchant_74,Travel,San Francisco,Canada,8,5022299,0.12,No,Yes
+M00075,Merchant_75,Healthcare,Chennai,India,24,6055200,0.95,No,No
+M00076,Merchant_76,Healthcare,London,Germany,10,8104511,0.7,Yes,Yes
+M00077,Merchant_77,Grocery,Chennai,Canada,19,6305454,0.67,No,No
+M00078,Merchant_78,Electronics,Delhi,USA,17,9966359,0.28,Yes,Yes
+M00079,Merchant_79,Electronics,Delhi,UK,2,9564553,0.52,No,No
+M00080,Merchant_80,Electronics,Delhi,UK,25,3093320,0.95,Yes,Yes
+M00081,Merchant_81,Travel,Hyderabad,UK,19,5374209,0.1,No,Yes
+M00082,Merchant_82,Retail,Mumbai,UK,16,7463801,0.22,Yes,No
+M00083,Merchant_83,Electronics,Hyderabad,India,30,3986854,0.67,Yes,Yes
+M00084,Merchant_84,Grocery,Hyderabad,Canada,25,2932873,0.03,Yes,Yes
+M00085,Merchant_85,Retail,Delhi,India,12,3508139,0.28,No,No
+M00086,Merchant_86,Food,Bengaluru,Germany,10,1939032,0.72,Yes,No
+M00087,Merchant_87,Travel,Delhi,UK,3,2395425,0.99,Yes,No
+M00088,Merchant_88,Entertainment,Chennai,USA,24,1347391,0.33,No,No
+M00089,Merchant_89,Travel,San Francisco,Canada,22,1342998,0.71,No,Yes
+M00090,Merchant_90,Travel,Chennai,Canada,11,3294359,0.84,Yes,Yes
+M00091,Merchant_91,Grocery,Bengaluru,Canada,13,3794503,0.67,No,No
+M00092,Merchant_92,Grocery,Delhi,USA,24,8433686,0.28,Yes,Yes
+M00093,Merchant_93,Food,London,USA,1,7386660,0.07,Yes,Yes
+M00094,Merchant_94,Retail,Delhi,UK,20,6480211,0.63,Yes,No
+M00095,Merchant_95,Travel,Hyderabad,USA,29,5134852,0.84,No,No
+M00096,Merchant_96,Travel,London,Germany,20,6091611,0.54,No,Yes
+M00097,Merchant_97,Grocery,Chennai,UK,14,7602316,0.33,No,Yes
+M00098,Merchant_98,Grocery,Delhi,UK,22,2004822,0.35,No,Yes
+M00099,Merchant_99,Entertainment,Delhi,Germany,20,7012261,0.69,Yes,No
+M00100,Merchant_100,Electronics,Hyderabad,USA,29,6961979,0.06,No,No
+M00101,Merchant_101,Healthcare,Mumbai,Germany,13,7514716,0.43,No,Yes
+M00102,Merchant_102,Electronics,Delhi,USA,11,865519,0.31,No,Yes
+M00103,Merchant_103,Food,Bengaluru,Canada,7,1950788,0.95,No,Yes
+M00104,Merchant_104,Food,Hyderabad,India,24,454296,0.8,Yes,No
+M00105,Merchant_105,Electronics,London,Canada,3,925694,0.52,No,Yes
+M00106,Merchant_106,Grocery,London,Canada,13,3947593,0.29,Yes,No
+M00107,Merchant_107,Electronics,Delhi,USA,18,4272556,0.94,Yes,Yes
+M00108,Merchant_108,Entertainment,Hyderabad,India,17,6776281,0.79,Yes,Yes
+M00109,Merchant_109,Electronics,Mumbai,India,8,4249152,0.03,Yes,No
+M00110,Merchant_110,Healthcare,Delhi,USA,27,4629825,0.86,Yes,Yes
+M00111,Merchant_111,Food,San Francisco,Germany,1,347326,0.74,Yes,Yes
+M00112,Merchant_112,Healthcare,Hyderabad,Germany,7,5337674,0.78,No,Yes
+M00113,Merchant_113,Electronics,Mumbai,Germany,7,1772339,0.26,No,No
+M00114,Merchant_114,Electronics,Delhi,India,8,6917098,0.56,No,No
+M00115,Merchant_115,Healthcare,Hyderabad,Canada,8,6515747,0.02,No,No
+M00116,Merchant_116,Electronics,London,Canada,23,1917044,0.45,Yes,No
+M00117,Merchant_117,Entertainment,Bengaluru,Germany,12,8099482,0.56,No,No
+M00118,Merchant_118,Grocery,London,India,4,9510095,0.17,No,Yes
+M00119,Merchant_119,Retail,Bengaluru,Germany,20,8044257,0.52,Yes,Yes
+M00120,Merchant_120,Entertainment,Delhi,UK,14,5325347,0.74,Yes,Yes
+M00121,Merchant_121,Electronics,San Francisco,Canada,20,6920513,0.87,No,Yes
+M00122,Merchant_122,Entertainment,Hyderabad,Germany,18,8485512,0.31,Yes,No
+M00123,Merchant_123,Travel,San Francisco,Germany,17,9408120,0.86,Yes,Yes
+M00124,Merchant_124,Travel,San Francisco,India,13,2235445,0.76,Yes,Yes
+M00125,Merchant_125,Grocery,Bengaluru,Germany,28,2006975,0.04,No,No
+M00126,Merchant_126,Grocery,San Francisco,Canada,16,2446551,0.75,No,No
+M00127,Merchant_127,Retail,Mumbai,India,14,5036253,0.72,No,No
+M00128,Merchant_128,Food,Mumbai,Canada,21,2884106,0.14,Yes,No
+M00129,Merchant_129,Food,Hyderabad,UK,16,7865840,0.21,No,Yes
+M00130,Merchant_130,Grocery,Hyderabad,Germany,1,5429920,0.42,Yes,No
+M00131,Merchant_131,Retail,Chennai,UK,23,3248654,0.2,Yes,No
+M00132,Merchant_132,Electronics,Chennai,India,20,7963382,0.59,Yes,No
+M00133,Merchant_133,Healthcare,Hyderabad,USA,12,337053,0.93,No,No
+M00134,Merchant_134,Entertainment,London,Germany,19,5229639,0.37,No,No
+M00135,Merchant_135,Food,Hyderabad,USA,3,2657213,0.1,Yes,No
+M00136,Merchant_136,Grocery,Mumbai,Canada,4,2225741,0.8,No,No
+M00137,Merchant_137,Food,London,Canada,20,4751273,0.97,No,Yes
+M00138,Merchant_138,Grocery,Chennai,USA,7,1632401,0.93,Yes,Yes
+M00139,Merchant_139,Grocery,Delhi,India,11,1405056,0.9,Yes,Yes
+M00140,Merchant_140,Food,London,Germany,14,8013629,0.33,Yes,Yes
+M00141,Merchant_141,Food,Delhi,Germany,25,6568117,0.71,No,No
+M00142,Merchant_142,Entertainment,Hyderabad,UK,17,1411972,0.88,Yes,Yes
+M00143,Merchant_143,Healthcare,London,UK,23,2497195,0.84,No,No
+M00144,Merchant_144,Healthcare,London,UK,22,2117289,0.56,No,No
+M00145,Merchant_145,Grocery,Chennai,UK,28,7919455,0.77,No,No
+M00146,Merchant_146,Grocery,Hyderabad,Canada,29,3304180,0.38,Yes,Yes
+M00147,Merchant_147,Grocery,Delhi,UK,17,3369688,0.01,No,No
+M00148,Merchant_148,Retail,Mumbai,UK,17,318011,0.61,Yes,No
+M00149,Merchant_149,Healthcare,Delhi,Germany,2,4345272,0.27,Yes,Yes
+M00150,Merchant_150,Entertainment,San Francisco,Germany,20,7724921,0.49,No,Yes
+M00151,Merchant_151,Retail,Mumbai,India,20,2670131,0.71,Yes,Yes
+M00152,Merchant_152,Retail,Delhi,India,2,7538648,0.64,Yes,No
+M00153,Merchant_153,Retail,London,Canada,9,3357839,0.66,Yes,No
+M00154,Merchant_154,Entertainment,San Francisco,UK,29,2938932,0.91,No,Yes
+M00155,Merchant_155,Healthcare,Delhi,Germany,27,1131520,0.06,Yes,No
+M00156,Merchant_156,Retail,Bengaluru,Germany,2,4722550,0.61,No,Yes
+M00157,Merchant_157,Healthcare,San Francisco,India,10,4692983,0.56,Yes,No
+M00158,Merchant_158,Travel,Hyderabad,India,19,7867941,0.09,Yes,Yes
+M00159,Merchant_159,Healthcare,Chennai,USA,11,437345,0.77,Yes,Yes
+M00160,Merchant_160,Healthcare,Mumbai,Germany,3,4239478,0.31,Yes,Yes
+M00161,Merchant_161,Electronics,Chennai,Germany,23,4916345,0.18,Yes,No
+M00162,Merchant_162,Travel,Bengaluru,USA,9,3442434,0.18,No,No
+M00163,Merchant_163,Healthcare,Delhi,UK,3,8318917,0.36,No,No
+M00164,Merchant_164,Entertainment,San Francisco,Canada,15,2960089,0.04,No,Yes
+M00165,Merchant_165,Food,Hyderabad,USA,23,7378852,0.35,No,Yes
+M00166,Merchant_166,Electronics,San Francisco,Canada,18,4612234,0.09,Yes,No
+M00167,Merchant_167,Grocery,Delhi,UK,2,2034382,0.52,Yes,No
+M00168,Merchant_168,Grocery,Delhi,Canada,11,6345868,0.56,Yes,No
+M00169,Merchant_169,Healthcare,Chennai,UK,28,232511,0.16,No,No
+M00170,Merchant_170,Electronics,San Francisco,India,6,6106319,0.31,No,Yes
+M00171,Merchant_171,Entertainment,Chennai,Germany,26,7757887,0.59,No,No
+M00172,Merchant_172,Travel,London,USA,9,6361504,0.6,No,No
+M00173,Merchant_173,Electronics,Chennai,USA,25,8605390,0.11,No,No
+M00174,Merchant_174,Food,Delhi,Canada,1,2851899,0.51,No,Yes
+M00175,Merchant_175,Food,London,USA,5,5689281,0.79,Yes,Yes
+M00176,Merchant_176,Electronics,London,USA,26,5906635,0.46,Yes,No
+M00177,Merchant_177,Retail,San Francisco,USA,7,2986829,0.3,Yes,Yes
+M00178,Merchant_178,Grocery,London,USA,14,1612749,0.72,Yes,No
+M00179,Merchant_179,Retail,Delhi,USA,12,1776269,0.47,No,Yes
+M00180,Merchant_180,Travel,San Francisco,Germany,27,7875970,0.71,Yes,No
+M00181,Merchant_181,Grocery,Mumbai,USA,13,5588025,0.9,No,No
+M00182,Merchant_182,Food,Chennai,UK,16,9938645,0.03,Yes,Yes
+M00183,Merchant_183,Electronics,Mumbai,UK,17,126701,0.61,No,Yes
+M00184,Merchant_184,Healthcare,Bengaluru,USA,16,3253622,0.04,No,No
+M00185,Merchant_185,Retail,Mumbai,Germany,21,3117812,0.43,No,No
+M00186,Merchant_186,Travel,San Francisco,Germany,2,4479180,0.96,No,Yes
+M00187,Merchant_187,Grocery,Delhi,Canada,27,1885608,0.46,Yes,No
+M00188,Merchant_188,Healthcare,San Francisco,India,21,6885940,0.8,Yes,Yes
+M00189,Merchant_189,Electronics,Bengaluru,Canada,17,6542287,0.69,Yes,No
+M00190,Merchant_190,Healthcare,San Francisco,Germany,14,1014547,0.3,No,Yes
+M00191,Merchant_191,Food,London,Germany,17,6354970,0.78,No,No
+M00192,Merchant_192,Retail,London,USA,14,9020640,0.76,Yes,Yes
+M00193,Merchant_193,Retail,Mumbai,Canada,9,3415396,0.51,No,No
+M00194,Merchant_194,Retail,Delhi,UK,2,2139294,0.87,No,No
+M00195,Merchant_195,Retail,Hyderabad,UK,9,7242103,0.34,No,Yes
+M00196,Merchant_196,Food,Mumbai,USA,10,6087542,0.42,No,No
+M00197,Merchant_197,Electronics,San Francisco,India,20,1973734,0.36,Yes,No
+M00198,Merchant_198,Grocery,Bengaluru,India,18,1686664,0.13,Yes,No
+M00199,Merchant_199,Travel,Mumbai,UK,15,4195330,0.92,No,Yes
+M00200,Merchant_200,Retail,Mumbai,UK,2,2562063,0.61,Yes,No

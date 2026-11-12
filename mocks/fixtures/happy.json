@@ -1,0 +1,354 @@
+{
+  "description": "SAMPLE FIXTURE — happy path with accept then sealed holdout. Numbers are illustrative only.",
+  "mock": true,
+  "steps": [
+    {
+      "delay_ms": 20,
+      "type": "session_created",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "scenario": "happy",
+        "dataset": "churn_sample.csv",
+        "target_column": "churned",
+        "metric": "f1",
+        "target_score": 0.7,
+        "experiment_budget": 10,
+        "note": "sample fixture session"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "ok",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "role": "router", "experiment": 1, "of": 10 }
+    },
+    {
+      "delay_ms": 50,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": { "lead": "data_scientist", "status": "running" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "data_profiler",
+      "payload": { "subagent": "data_profiler", "service": "harness" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "tool_called",
+      "source_service": "harness",
+      "source_agent": "data_profiler",
+      "payload": { "tool": "inspect_data", "note": "sample fixture tool call" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "harness",
+      "source_agent": "data_profiler",
+      "payload": { "subagent": "data_profiler", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "leakage_auditor",
+      "payload": { "subagent": "leakage_auditor", "service": "harness" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "harness",
+      "source_agent": "leakage_auditor",
+      "payload": {
+        "subagent": "leakage_auditor",
+        "status": "completed",
+        "identifier_columns": ["customer_id"]
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "feature_analyst",
+      "payload": { "subagent": "feature_analyst", "service": "agent_service" }
+    },
+    {
+      "delay_ms": 50,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "feature_analyst",
+      "payload": { "subagent": "feature_analyst", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": {
+        "lead": "data_scientist",
+        "status": "completed",
+        "summary": "SAMPLE: 18% positive class, 1 identifier flagged"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": { "lead": "hypothesis_generator", "status": "running", "experiment": 1 }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_started",
+      "source_service": "memory_service",
+      "source_agent": "memory_retriever",
+      "payload": { "subagent": "memory_retriever" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_completed",
+      "source_service": "memory_service",
+      "source_agent": "memory_retriever",
+      "payload": { "subagent": "memory_retriever", "status": "completed", "hits": 0 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "hypothesis_drafter",
+      "payload": { "subagent": "hypothesis_drafter" }
+    },
+    {
+      "delay_ms": 50,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "hypothesis_drafter",
+      "payload": {
+        "subagent": "hypothesis_drafter",
+        "status": "completed",
+        "model_family": "logistic_regression"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "novelty_checker",
+      "payload": { "subagent": "novelty_checker" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "novelty_checker",
+      "payload": { "subagent": "novelty_checker", "novelty_ok": true }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": {
+        "lead": "hypothesis_generator",
+        "status": "completed",
+        "experiment_id": "e-1",
+        "model_family": "logistic_regression"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "status": "running", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "subagent": "config_validator" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "tool_called",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "tool": "validate_experiment" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_completed",
+      "source_service": "harness",
+      "source_agent": "config_validator",
+      "payload": { "subagent": "config_validator", "valid": true }
+    },
+    {
+      "delay_ms": 30,
+      "type": "trial_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "experiment_id": "e-1", "model_family": "logistic_regression" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "tool_called",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "tool": "run_experiment", "idempotency_key": "e-1" }
+    },
+    {
+      "delay_ms": 80,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1",
+        "note": "SAMPLE fixture metrics — not from a trained model",
+        "train_metrics": { "f1": 0.44 },
+        "validation_metrics": { "f1": 0.41, "precision": 0.58, "recall": 0.32 },
+        "duration_seconds": 1.2
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "status": "completed", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "experiments_used": 1, "budget": 10, "best_val_f1": 0.41 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "lead": "judge", "status": "running", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "metric_analyst",
+      "payload": { "subagent": "metric_analyst" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "metric_analyst",
+      "payload": { "subagent": "metric_analyst", "status": "completed" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_started",
+      "source_service": "harness",
+      "source_agent": "overfitting_checker",
+      "payload": { "subagent": "overfitting_checker" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "agent_completed",
+      "source_service": "harness",
+      "source_agent": "overfitting_checker",
+      "payload": { "subagent": "overfitting_checker", "risk": "low" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "agent_service",
+      "source_agent": "independent_reviewer",
+      "payload": { "subagent": "independent_reviewer" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "agent_service",
+      "source_agent": "independent_reviewer",
+      "payload": { "subagent": "independent_reviewer", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": {
+        "experiment_id": "e-1",
+        "action": "accept",
+        "observation": "SAMPLE: baseline above stop threshold for demo happy path",
+        "next_action": "final holdout"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "lead": "judge", "status": "completed", "action": "accept" }
+    },
+    {
+      "delay_ms": 50,
+      "type": "tool_called",
+      "source_service": "harness",
+      "source_agent": "meta_supervisor",
+      "payload": {
+        "tool": "holdout_evaluate",
+        "note": "SAMPLE: sealed holdout opened once at end"
+      }
+    },
+    {
+      "delay_ms": 60,
+      "type": "holdout_evaluated",
+      "source_service": "dataset_service",
+      "source_agent": null,
+      "payload": {
+        "experiment_id": "e-1",
+        "metric": "f1",
+        "score": 0.39,
+        "note": "SAMPLE fixture holdout score — not a real evaluation"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "stop_reason": "accepted", "experiments_used": 1 }
+    },
+    {
+      "delay_ms": 20,
+      "type": "activity",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "message": "SAMPLE fixture scenario 'happy' complete", "done": true }
+    }
+  ]
+}

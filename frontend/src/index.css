@@ -1,0 +1,54 @@
+@import "tailwindcss";
+/* React Flow styles after Tailwind (required for TW v4 ordering). */
+@import "@xyflow/react/dist/style.css";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Light lab surface: deep ink text on cool paper, teal accent (not purple/cream). */
+  --color-ink: #0f1f1a;
+  --color-ink-2: #eef3f0;
+  --color-panel: #ffffff;
+  --color-line: #c8d5ce;
+  --color-mist: #5a7267;
+  --color-paper: #14241e;
+  --color-teal: #0d8f6e;
+  --color-teal-dim: #0a6b53;
+  --color-amber: #9a6b12;
+  --color-danger: #c45c4a;
+  --color-ok: #1f7a45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-paper);
+  background:
+    radial-gradient(1100px 520px at 8% -8%, rgba(13, 143, 110, 0.12) 0%, transparent 55%),
+    radial-gradient(900px 480px at 100% 0%, rgba(90, 114, 103, 0.08) 0%, transparent 50%),
+    linear-gradient(165deg, #f7faf8 0%, #eef4f1 48%, #f5f8f6 100%);
+  background-attachment: fixed;
+}
+
+.lab-grid {
+  background-image:
+    linear-gradient(rgba(13, 143, 110, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 143, 110, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

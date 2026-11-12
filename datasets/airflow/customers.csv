@@ -1,0 +1,1001 @@
+customer_id,age,gender,country,state,city,occupation,annual_income,credit_score,customer_since,account_type,risk_level,total_accounts,avg_monthly_balance,loan_status
+C000001,58,Male,India,Maharashtra,Bengaluru,Teacher,885264,404,2022-08-03,Premium,Medium,1,314588,Active
+C000002,20,Male,India,Karnataka,Bengaluru,Analyst,2825049,327,2021-04-17,Savings,Medium,5,224949,None
+C000003,46,Other,UK,Tamil Nadu,London,Developer,969659,732,2018-10-25,Current,Low,3,58587,None
+C000004,42,Male,UK,Maharashtra,Hyderabad,Doctor,482244,770,2021-01-05,Savings,High,4,46313,Closed
+C000005,36,Other,Canada,Maharashtra,Hyderabad,Teacher,591735,346,2022-06-01,Savings,Medium,1,453432,None
+C000006,24,Female,UK,California,San Francisco,Developer,1830217,466,2019-02-25,Current,Low,3,372955,Closed
+C000007,59,Male,Canada,Karnataka,Hyderabad,Manager,1326811,467,2020-03-08,Current,Low,5,120141,Closed
+C000008,38,Male,USA,Tamil Nadu,London,Doctor,1982607,574,2015-09-29,Savings,High,5,464469,Closed
+C000009,38,Male,Germany,California,San Francisco,Student,899246,571,2016-07-25,Savings,Medium,5,142752,Closed
+C000010,55,Female,Canada,California,Mumbai,Teacher,880205,821,2020-07-14,Savings,Medium,1,85132,Closed
+C000011,28,Other,Germany,Texas,Chennai,Student,1900627,779,2020-12-07,Current,High,1,361664,Closed
+C000012,25,Other,Canada,Maharashtra,London,Manager,1726799,414,2018-04-17,Current,Low,1,383584,Closed
+C000013,34,Other,USA,Texas,Chennai,Developer,2922699,605,2024-06-09,Premium,Low,2,85131,Active
+C000014,66,Male,Canada,Texas,Chennai,Analyst,1659609,800,2015-03-21,Savings,High,3,130541,None
+C000015,33,Other,India,Tamil Nadu,San Francisco,Student,590298,845,2023-08-03,Savings,Low,4,293255,None
+C000016,34,Other,Canada,California,Bengaluru,Analyst,1143688,619,2019-06-23,Premium,Low,4,476656,Closed
+C000017,46,Male,USA,Karnataka,Chennai,Doctor,388224,867,2017-07-31,Premium,Low,1,376112,Closed
+C000018,21,Male,India,Tamil Nadu,London,Doctor,597197,826,2017-09-01,Current,Low,2,287713,None
+C000019,64,Other,Canada,California,Bengaluru,Developer,2283792,716,2017-02-18,Savings,Low,4,190753,Active
+C000020,44,Female,India,Tamil Nadu,Chennai,Student,1723138,411,2017-10-15,Savings,Low,4,78495,Active
+C000021,29,Female,Germany,Karnataka,London,Engineer,2158625,863,2016-02-06,Savings,Low,5,443319,None
+C000022,23,Male,USA,California,Delhi,Student,1196521,710,2025-02-13,Savings,Low,1,209693,Active
+C000023,68,Female,UK,California,San Francisco,Manager,2631061,798,2016-09-26,Savings,Low,1,308657,Closed
+C000024,52,Male,UK,Tamil Nadu,Chennai,Analyst,2299795,814,2025-04-23,Premium,Low,5,47001,None
+C000025,22,Other,India,Karnataka,Delhi,Engineer,2689391,552,2021-06-29,Premium,Low,1,224794,Closed
+C000026,55,Other,Canada,Maharashtra,Mumbai,Teacher,1617782,544,2017-12-23,Current,Low,3,244717,Active
+C000027,66,Male,India,California,Hyderabad,Analyst,719351,375,2021-01-11,Savings,Low,2,494296,Active
+C000028,22,Male,UK,Maharashtra,Bengaluru,Student,2578421,609,2021-11-10,Premium,Low,5,161960,Closed
+C000029,24,Male,UK,Tamil Nadu,Chennai,Manager,2620388,459,2018-01-20,Current,Low,3,111743,Closed
+C000030,58,Female,Canada,California,Mumbai,Developer,513066,394,2022-02-11,Current,Medium,1,6858,Active
+C000031,67,Male,UK,Karnataka,San Francisco,Student,2613915,737,2021-04-16,Savings,Low,2,291046,None
+C000032,41,Other,Canada,Karnataka,Delhi,Teacher,475442,615,2019-02-02,Savings,Medium,2,362599,None
+C000033,60,Male,UK,Texas,London,Student,2903243,458,2025-05-19,Savings,Medium,2,467115,Active
+C000034,19,Male,UK,California,London,Manager,1340888,573,2016-10-14,Premium,Low,1,455150,Active
+C000035,32,Male,Germany,Maharashtra,Mumbai,Developer,1254604,528,2015-04-07,Premium,Low,3,151068,None
+C000036,67,Female,UK,Texas,Delhi,Manager,2549051,639,2025-07-14,Savings,Low,3,98620,Closed
+C000037,34,Male,India,Texas,Delhi,Doctor,1615658,746,2021-10-19,Premium,Low,5,104656,Active
+C000038,20,Other,Germany,Tamil Nadu,Hyderabad,Developer,2558431,501,2019-01-31,Current,Low,3,331712,Active
+C000039,60,Male,UK,Texas,Mumbai,Manager,2012924,634,2019-07-07,Premium,Low,2,105579,Active
+C000040,60,Female,USA,Texas,Hyderabad,Doctor,2003202,861,2024-05-07,Savings,Low,2,230385,Closed
+C000041,56,Other,UK,California,Delhi,Student,1196328,823,2020-04-22,Premium,Low,1,153785,Closed
+C000042,60,Other,Canada,Maharashtra,Chennai,Developer,1285110,617,2017-07-09,Savings,Low,1,133368,Active
+C000043,57,Male,Germany,California,San Francisco,Analyst,1115520,693,2020-07-17,Current,Low,1,473010,None
+C000044,67,Female,USA,Karnataka,London,Manager,2472472,775,2015-07-25,Premium,Low,1,244317,None
+C000045,69,Female,Canada,Texas,Hyderabad,Doctor,2156287,816,2019-10-14,Premium,Low,2,394889,Active
+C000046,46,Female,USA,Maharashtra,London,Developer,2486489,796,2022-01-11,Savings,Low,1,379103,Active
+C000047,33,Female,UK,Maharashtra,Hyderabad,Engineer,880382,454,2017-08-05,Current,Low,2,38674,Active
+C000048,44,Female,Canada,California,Delhi,Engineer,1167526,730,2019-05-15,Premium,High,1,454174,Closed
+C000049,42,Female,India,Maharashtra,Mumbai,Developer,1935722,729,2021-01-13,Premium,Medium,5,475711,None
+C000050,49,Male,UK,California,Delhi,Engineer,1930985,644,2022-07-02,Premium,Medium,2,445667,Active
+C000051,26,Other,Canada,Tamil Nadu,Delhi,Analyst,2667231,327,2015-12-10,Premium,Low,4,100278,None
+C000052,34,Female,UK,Karnataka,Delhi,Doctor,1715579,688,2018-02-13,Current,Low,1,251576,None
+C000053,65,Other,India,Maharashtra,Bengaluru,Manager,587806,341,2023-06-17,Savings,High,2,444997,None
+C000054,57,Male,USA,Karnataka,Delhi,Manager,779784,877,2025-08-18,Savings,Low,3,407075,Active
+C000055,28,Other,Canada,Tamil Nadu,London,Developer,986883,618,2016-03-18,Premium,Low,3,306883,Closed
+C000056,42,Female,USA,Tamil Nadu,Hyderabad,Manager,2930845,548,2016-02-22,Premium,Medium,5,427328,None
+C000057,68,Other,India,Maharashtra,Hyderabad,Student,1854286,370,2020-09-03,Premium,Low,4,436138,Active
+C000058,24,Female,UK,California,San Francisco,Teacher,2126565,480,2023-03-25,Premium,High,3,327915,Closed
+C000059,67,Female,Germany,California,London,Manager,2785018,574,2018-08-13,Savings,Medium,1,151238,Active
+C000060,33,Female,Canada,Texas,San Francisco,Student,1710949,329,2020-07-17,Current,Low,2,191030,Active
+C000061,39,Female,Canada,Maharashtra,Hyderabad,Engineer,2466891,495,2015-12-17,Savings,Medium,4,296072,None
+C000062,62,Female,Germany,California,London,Engineer,690294,601,2017-06-26,Current,Low,3,353106,Closed
+C000063,41,Female,Canada,Texas,Mumbai,Student,2608496,638,2018-12-12,Premium,Low,3,136807,None
+C000064,25,Other,USA,Maharashtra,Chennai,Manager,2547576,489,2017-02-23,Savings,Medium,3,384891,Closed
+C000065,66,Other,Canada,Maharashtra,Chennai,Developer,1114188,603,2017-07-20,Current,Low,1,376205,Closed
+C000066,26,Female,India,Tamil Nadu,Hyderabad,Doctor,829654,802,2016-02-25,Savings,Low,4,255984,Active
+C000067,39,Male,India,Maharashtra,London,Student,778516,366,2019-06-30,Current,Low,1,84548,None
+C000068,69,Other,UK,Tamil Nadu,Bengaluru,Engineer,2640727,726,2021-10-19,Premium,Medium,2,411686,Closed
+C000069,42,Female,Germany,Maharashtra,London,Analyst,2098642,612,2021-05-18,Premium,Low,1,404893,None
+C000070,58,Male,UK,Tamil Nadu,Bengaluru,Teacher,1029026,865,2015-11-04,Savings,Low,4,366429,Closed
+C000071,48,Female,India,Karnataka,Mumbai,Manager,1485806,764,2015-10-19,Premium,Low,3,418048,Closed
+C000072,55,Other,USA,California,Chennai,Analyst,1242919,452,2025-03-09,Current,Medium,1,36267,None
+C000073,68,Female,Canada,Texas,Mumbai,Student,821577,779,2022-09-21,Current,Low,3,267391,Closed
+C000074,49,Female,India,Texas,Chennai,Student,1651914,556,2015-04-16,Savings,Low,5,312821,None
+C000075,66,Other,UK,Texas,Chennai,Developer,1034803,781,2020-10-26,Premium,Low,3,100152,Closed
+C000076,45,Other,Germany,Tamil Nadu,Delhi,Doctor,2012736,641,2018-08-08,Premium,Low,2,177912,Active
+C000077,62,Female,UK,California,London,Developer,2607272,337,2020-02-06,Savings,Low,3,65776,Active
+C000078,50,Male,Canada,California,Delhi,Engineer,1086778,830,2019-01-21,Premium,Medium,4,403453,None
+C000079,31,Female,Canada,Karnataka,Mumbai,Student,2333028,424,2015-04-29,Premium,Low,2,377130,None
+C000080,37,Other,India,Texas,Delhi,Engineer,1242462,416,2020-03-05,Savings,Low,2,266292,Closed
+C000081,36,Other,UK,California,London,Student,2280633,549,2020-02-14,Premium,Low,2,488324,Closed
+C000082,50,Other,USA,Tamil Nadu,Mumbai,Developer,2040394,648,2025-06-23,Premium,Low,1,153289,Closed
+C000083,37,Other,Canada,California,London,Teacher,2172955,851,2020-06-06,Current,Low,5,202766,Active
+C000084,38,Male,USA,Texas,Delhi,Teacher,2022915,344,2018-07-27,Premium,Low,4,207416,Closed
+C000085,68,Other,USA,California,Chennai,Teacher,2406761,639,2024-10-02,Savings,Medium,4,57277,Closed
+C000086,47,Male,USA,California,London,Manager,947437,376,2020-04-07,Current,Low,4,345701,None
+C000087,39,Other,Canada,California,Mumbai,Manager,2346600,854,2015-05-28,Premium,Low,3,124268,Closed
+C000088,23,Female,India,Tamil Nadu,Delhi,Teacher,1556051,329,2015-07-08,Current,Medium,3,192938,Active
+C000089,45,Male,USA,Texas,Delhi,Analyst,1055213,474,2016-12-18,Savings,Low,4,329906,Closed
+C000090,33,Female,Canada,Karnataka,Bengaluru,Student,2975565,560,2020-02-26,Current,Low,4,477493,Active
+C000091,61,Other,USA,Tamil Nadu,Delhi,Doctor,2764454,606,2022-03-02,Current,Low,4,448182,Active
+C000092,30,Female,Germany,Tamil Nadu,Bengaluru,Student,2698817,667,2021-06-12,Current,High,3,16502,Closed
+C000093,43,Female,India,Texas,London,Manager,505706,808,2024-05-04,Current,Medium,2,323276,Active
+C000094,32,Other,USA,Texas,Mumbai,Manager,873693,399,2025-02-17,Premium,Low,3,418459,Active
+C000095,20,Other,UK,Karnataka,Chennai,Doctor,1670359,725,2016-12-20,Savings,Low,5,464517,Active
+C000096,51,Other,UK,Karnataka,Mumbai,Developer,2321016,602,2023-05-16,Current,Medium,4,44478,None
+C000097,66,Male,Germany,Texas,Mumbai,Engineer,1954965,314,2017-12-19,Premium,Low,3,357755,Closed
+C000098,61,Female,Canada,California,London,Manager,1858073,410,2022-07-27,Savings,Low,5,468593,Closed
+C000099,38,Other,USA,Tamil Nadu,San Francisco,Developer,2247279,609,2022-04-13,Current,Low,1,24509,Active
+C000100,49,Male,India,Karnataka,Hyderabad,Teacher,1930098,764,2019-02-28,Premium,High,5,224743,Closed
+C000101,65,Other,USA,California,San Francisco,Engineer,2352470,717,2025-07-13,Current,Low,3,118911,Active
+C000102,46,Male,UK,Tamil Nadu,San Francisco,Doctor,2583655,667,2015-09-06,Current,Low,1,449613,Active
+C000103,23,Other,USA,Texas,Chennai,Engineer,1698838,549,2016-05-30,Premium,Low,5,113610,Closed
+C000104,31,Male,UK,Karnataka,London,Analyst,311893,583,2024-08-17,Savings,High,5,136414,None
+C000105,25,Other,India,Karnataka,Chennai,Doctor,1297957,631,2015-03-06,Savings,Low,2,393873,Active
+C000106,51,Male,India,California,Delhi,Developer,1818501,825,2021-08-28,Savings,Low,2,327493,None
+C000107,64,Other,Canada,Maharashtra,Delhi,Manager,430655,362,2020-05-15,Current,Low,1,262042,Closed
+C000108,46,Male,India,Maharashtra,Hyderabad,Teacher,575491,429,2018-01-31,Premium,Low,5,378373,Active
+C000109,42,Other,Canada,Maharashtra,Delhi,Analyst,2839344,740,2016-02-11,Premium,Low,5,382927,None
+C000110,45,Female,USA,California,Mumbai,Developer,2202112,708,2019-08-31,Premium,Low,4,168852,Closed
+C000111,34,Female,USA,California,Chennai,Engineer,658044,395,2019-11-04,Savings,Medium,3,430600,None
+C000112,53,Male,Canada,Texas,Hyderabad,Doctor,812675,720,2018-12-19,Premium,High,4,460130,Closed
+C000113,21,Female,Canada,Maharashtra,Mumbai,Engineer,2723965,819,2017-05-21,Savings,Low,2,449216,None
+C000114,40,Other,UK,Tamil Nadu,London,Doctor,2707949,531,2024-01-20,Current,Medium,5,326689,Closed
+C000115,59,Other,India,Texas,San Francisco,Developer,1421757,329,2017-01-08,Current,Medium,3,488151,Active
+C000116,40,Male,USA,Karnataka,Hyderabad,Manager,1981011,371,2016-08-04,Premium,Low,1,53107,Closed
+C000117,51,Male,Germany,California,Delhi,Doctor,960222,678,2018-06-30,Premium,Low,5,317592,None
+C000118,21,Male,USA,Texas,Chennai,Manager,642177,578,2019-12-20,Premium,Low,5,236758,Active
+C000119,35,Male,Canada,Tamil Nadu,Mumbai,Student,765105,590,2022-08-09,Premium,Low,5,354769,Active
+C000120,20,Male,Germany,Texas,Chennai,Engineer,1157412,608,2025-08-08,Savings,Medium,3,156753,Active
+C000121,25,Male,Germany,California,Bengaluru,Teacher,1894705,845,2022-11-22,Savings,Low,3,42788,Active
+C000122,65,Male,Germany,Tamil Nadu,Delhi,Engineer,1613071,889,2019-10-25,Premium,Low,4,156789,None
+C000123,43,Male,UK,Karnataka,London,Analyst,2229786,670,2015-12-27,Current,Medium,2,233419,Closed
+C000124,43,Other,India,California,London,Doctor,1724021,526,2018-09-26,Savings,Low,1,283189,Closed
+C000125,30,Female,UK,Karnataka,Bengaluru,Engineer,914231,562,2017-03-19,Savings,Low,1,97875,Closed
+C000126,49,Female,Canada,Texas,Delhi,Manager,2667650,630,2024-09-09,Premium,Low,4,40801,Active
+C000127,46,Other,UK,Maharashtra,Hyderabad,Engineer,1776152,819,2015-10-31,Current,Low,1,34826,Active
+C000128,36,Male,India,Texas,Hyderabad,Analyst,1912636,773,2021-07-05,Premium,High,1,240789,Closed
+C000129,59,Male,UK,Texas,Delhi,Analyst,932757,363,2020-01-20,Savings,Medium,3,379507,None
+C000130,50,Other,USA,Tamil Nadu,Bengaluru,Manager,2136091,749,2020-11-16,Premium,Low,3,200481,Active
+C000131,42,Female,UK,Texas,Chennai,Developer,2946130,642,2015-09-27,Current,Low,4,153974,Active
+C000132,64,Other,Canada,Karnataka,Mumbai,Engineer,2744186,444,2025-04-12,Current,Low,4,72607,Closed
+C000133,63,Male,UK,Texas,Delhi,Manager,1677730,430,2022-07-07,Premium,Medium,5,53996,Closed
+C000134,60,Female,Canada,Maharashtra,Chennai,Doctor,1595478,484,2025-08-31,Savings,Low,4,105666,None
+C000135,26,Male,India,Maharashtra,London,Developer,724215,819,2023-08-24,Premium,Medium,5,24790,Closed
+C000136,39,Other,USA,Texas,Delhi,Teacher,980514,485,2024-04-28,Premium,Medium,2,383107,Active
+C000137,20,Female,UK,Karnataka,Delhi,Analyst,1495074,759,2017-08-16,Premium,Low,4,478942,None
+C000138,41,Other,Canada,California,Delhi,Developer,1481836,691,2020-08-21,Premium,Low,2,433286,None
+C000139,69,Other,USA,Maharashtra,Chennai,Manager,2315743,680,2021-03-21,Savings,Medium,5,451256,None
+C000140,36,Male,USA,Maharashtra,Delhi,Analyst,918025,747,2016-01-11,Savings,Medium,3,492835,None
+C000141,44,Male,Germany,Texas,Mumbai,Teacher,1919698,383,2019-03-16,Savings,Low,1,444970,Closed
+C000142,59,Female,USA,Karnataka,Chennai,Doctor,2281619,442,2023-07-06,Premium,Low,5,7753,None
+C000143,19,Female,USA,Karnataka,Hyderabad,Manager,2853828,840,2019-09-30,Savings,Medium,2,162889,None
+C000144,21,Male,Germany,Texas,Delhi,Engineer,764971,811,2021-09-10,Premium,Low,5,306490,None
+C000145,63,Male,UK,California,Chennai,Analyst,1779817,546,2021-05-26,Current,Low,1,279456,Active
+C000146,22,Other,Canada,Texas,London,Analyst,2624281,320,2019-05-19,Current,Low,4,200717,Active
+C000147,65,Male,UK,Tamil Nadu,Mumbai,Teacher,2935100,406,2023-08-27,Premium,Medium,3,74945,None
+C000148,40,Other,UK,Karnataka,London,Developer,2248769,790,2022-01-31,Savings,Medium,1,380413,Active
+C000149,20,Female,USA,Tamil Nadu,London,Teacher,475766,623,2025-06-20,Current,Low,5,253197,Active
+C000150,20,Other,USA,Maharashtra,Mumbai,Developer,500504,639,2018-01-24,Savings,Medium,4,471347,Active
+C000151,65,Female,Germany,Maharashtra,Bengaluru,Student,2386764,676,2025-05-13,Premium,Low,1,386200,Active
+C000152,23,Female,Canada,Karnataka,Hyderabad,Doctor,1647258,405,2015-11-24,Current,Low,3,238788,Closed
+C000153,63,Female,USA,California,Mumbai,Student,477650,661,2021-11-23,Current,Low,1,44343,Closed
+C000154,58,Female,UK,Texas,London,Manager,971032,331,2016-08-07,Premium,Low,4,23244,None
+C000155,22,Male,UK,Maharashtra,Delhi,Analyst,435833,457,2022-08-13,Current,High,3,237752,None
+C000156,54,Male,Canada,Maharashtra,Delhi,Doctor,1468909,555,2025-10-09,Savings,Low,2,266642,Closed
+C000157,42,Other,India,Maharashtra,London,Doctor,2171805,519,2021-11-11,Current,Low,4,109951,None
+C000158,26,Male,Germany,Karnataka,San Francisco,Student,668221,627,2022-06-28,Current,Medium,5,289253,Active
+C000159,37,Male,USA,Maharashtra,Hyderabad,Teacher,809031,505,2023-11-19,Savings,Low,4,18780,Active
+C000160,53,Other,UK,California,London,Analyst,844299,388,2015-09-27,Current,Low,4,280615,Active
+C000161,67,Female,Canada,Tamil Nadu,Bengaluru,Doctor,2994163,375,2020-01-18,Current,Low,3,72284,Closed
+C000162,58,Other,USA,Karnataka,Delhi,Analyst,532418,427,2020-10-23,Savings,Low,2,174167,Closed
+C000163,32,Female,Canada,Maharashtra,London,Engineer,1351114,501,2022-02-14,Premium,Low,3,327137,Closed
+C000164,23,Other,USA,Texas,Hyderabad,Teacher,1018067,645,2024-06-13,Premium,Low,1,47584,None
+C000165,59,Other,UK,Karnataka,London,Analyst,2047291,331,2020-08-01,Premium,Low,3,258202,None
+C000166,69,Other,Germany,Maharashtra,Delhi,Engineer,551293,461,2019-12-06,Current,Low,2,183358,Closed
+C000167,27,Female,UK,Maharashtra,Delhi,Teacher,1854158,827,2021-04-19,Savings,Low,4,69236,Active
+C000168,46,Male,USA,Tamil Nadu,Chennai,Doctor,1911241,728,2017-10-13,Savings,Medium,5,383078,Active
+C000169,30,Male,Germany,Texas,Delhi,Student,1594112,809,2015-04-05,Savings,High,5,244720,None
+C000170,31,Other,UK,Tamil Nadu,Chennai,Doctor,2375736,781,2018-03-16,Premium,Low,1,230930,None
+C000171,34,Other,UK,California,Mumbai,Engineer,1980161,352,2021-05-24,Premium,Low,5,156310,None
+C000172,42,Other,Germany,Texas,Mumbai,Developer,2914064,421,2016-06-11,Savings,Low,3,297464,Active
+C000173,66,Male,USA,Texas,Hyderabad,Student,2397478,341,2015-07-05,Savings,Low,3,426509,Active
+C000174,51,Female,USA,Texas,Hyderabad,Teacher,1675588,626,2016-10-27,Current,High,3,316282,Active
+C000175,50,Other,Canada,California,San Francisco,Analyst,1557412,786,2024-02-24,Savings,Low,1,223387,Closed
+C000176,37,Other,India,Texas,Delhi,Doctor,2726297,891,2017-07-21,Premium,Low,4,94397,Closed
+C000177,58,Other,Canada,California,Bengaluru,Developer,1315846,332,2021-06-03,Premium,Low,1,236231,Active
+C000178,44,Male,Germany,Karnataka,Delhi,Analyst,2864724,782,2024-10-15,Premium,Medium,2,276939,None
+C000179,53,Female,Germany,Texas,Delhi,Doctor,1026379,770,2025-03-25,Premium,Low,3,359349,Closed
+C000180,61,Other,UK,Texas,Delhi,Teacher,1333976,585,2021-04-04,Current,Low,3,409317,Active
+C000181,63,Male,Germany,Maharashtra,Delhi,Doctor,2650855,580,2018-03-24,Savings,Low,5,204069,Active
+C000182,70,Female,USA,Maharashtra,Chennai,Doctor,631473,654,2025-05-12,Current,Low,4,117190,None
+C000183,70,Other,UK,Texas,San Francisco,Doctor,875764,411,2021-11-26,Premium,Low,2,31615,Closed
+C000184,51,Male,USA,Tamil Nadu,Chennai,Student,1685351,783,2016-02-16,Premium,Medium,1,293543,None
+C000185,44,Other,Germany,California,San Francisco,Teacher,1504793,628,2018-03-15,Premium,Low,1,346992,Closed
+C000186,32,Other,India,Karnataka,Delhi,Developer,1037311,337,2024-05-18,Current,Medium,2,496052,Closed
+C000187,36,Male,India,Maharashtra,Hyderabad,Analyst,750051,643,2018-03-11,Current,High,5,279893,Active
+C000188,26,Other,Germany,Maharashtra,Bengaluru,Developer,772474,638,2016-10-27,Premium,Low,3,381752,None
+C000189,18,Other,UK,Maharashtra,Hyderabad,Manager,1110177,479,2021-11-07,Premium,Medium,4,275155,Active
+C000190,23,Female,India,Karnataka,Bengaluru,Student,1657283,554,2015-01-28,Current,Low,4,400185,Active
+C000191,39,Female,Canada,Texas,Chennai,Doctor,1808070,541,2015-09-12,Premium,Low,3,88737,Active
+C000192,61,Other,UK,Tamil Nadu,San Francisco,Doctor,1841590,526,2017-06-16,Savings,Low,4,397028,Closed
+C000193,41,Female,Canada,California,London,Analyst,1216084,553,2022-08-18,Premium,Medium,1,280516,Active
+C000194,51,Other,UK,Tamil Nadu,Hyderabad,Engineer,559032,860,2025-02-15,Premium,Low,5,83565,None
+C000195,38,Other,Germany,Tamil Nadu,San Francisco,Teacher,2745898,800,2016-01-08,Premium,Low,1,242729,None
+C000196,50,Female,Germany,Texas,Chennai,Analyst,2239355,615,2023-02-10,Savings,Low,1,396016,None
+C000197,55,Male,India,California,Mumbai,Manager,567428,854,2015-09-04,Savings,High,4,21638,Active
+C000198,44,Male,USA,California,Mumbai,Student,2181301,686,2019-03-19,Savings,Low,5,74724,Closed
+C000199,40,Male,USA,Texas,Delhi,Analyst,834132,528,2024-05-12,Savings,Medium,3,247747,Closed
+C000200,64,Other,Germany,Texas,Delhi,Developer,1263280,553,2020-03-01,Current,Low,2,496473,Closed
+C000201,66,Male,India,California,Hyderabad,Developer,365623,546,2017-04-24,Savings,Low,1,239063,Closed
+C000202,61,Other,India,Karnataka,San Francisco,Engineer,1987223,749,2017-08-17,Premium,Low,1,78471,Closed
+C000203,36,Male,Canada,Maharashtra,Hyderabad,Analyst,1644966,542,2018-05-21,Savings,High,5,120890,Active
+C000204,37,Female,India,Texas,Hyderabad,Manager,1034561,737,2021-03-26,Current,Low,3,498662,Closed
+C000205,60,Female,Canada,Maharashtra,San Francisco,Student,2012363,452,2018-05-13,Current,Low,5,253260,None
+C000206,32,Female,USA,California,Chennai,Analyst,2030894,726,2021-04-01,Premium,Low,2,138691,None
+C000207,39,Other,India,California,London,Doctor,687822,848,2023-02-15,Savings,Low,4,358198,Closed
+C000208,56,Male,India,Karnataka,London,Developer,2764504,872,2017-06-07,Current,Low,3,163957,None
+C000209,31,Male,India,California,Bengaluru,Manager,2835043,509,2019-06-13,Savings,Low,3,204576,Active
+C000210,52,Other,UK,Maharashtra,Mumbai,Doctor,2450908,809,2020-03-23,Savings,Medium,4,404312,Active
+C000211,31,Female,UK,California,Chennai,Analyst,1228090,449,2015-03-08,Current,Low,5,308637,Closed
+C000212,44,Female,USA,Karnataka,Mumbai,Teacher,1893163,883,2024-05-06,Savings,Low,3,139913,Active
+C000213,64,Other,Germany,California,Bengaluru,Manager,1777133,473,2016-07-27,Premium,Low,2,485719,Closed
+C000214,59,Male,Canada,Tamil Nadu,London,Developer,611764,349,2023-07-28,Savings,Low,2,40634,Closed
+C000215,27,Male,USA,Texas,Delhi,Doctor,553546,794,2022-05-24,Current,Low,5,294220,Active
+C000216,18,Male,Canada,Maharashtra,Hyderabad,Doctor,371901,814,2024-02-13,Premium,Low,2,61107,None
+C000217,51,Male,USA,Karnataka,Hyderabad,Analyst,1358718,662,2017-12-30,Current,Low,4,245647,Closed
+C000218,33,Other,USA,Maharashtra,San Francisco,Developer,638131,332,2016-01-18,Current,Low,5,254563,None
+C000219,58,Male,USA,Tamil Nadu,Delhi,Developer,2119948,639,2021-05-06,Savings,Medium,1,125463,None
+C000220,62,Other,Germany,Maharashtra,Chennai,Engineer,1475969,856,2021-04-27,Premium,Low,3,13209,None
+C000221,55,Male,Germany,Tamil Nadu,Mumbai,Teacher,2665412,546,2021-05-10,Current,Low,5,178921,Active
+C000222,66,Other,USA,Tamil Nadu,Hyderabad,Manager,1750639,354,2016-02-05,Current,Low,1,183568,Closed
+C000223,67,Other,Canada,California,London,Doctor,424259,579,2023-10-15,Current,Low,3,294951,Active
+C000224,45,Male,Canada,California,Chennai,Developer,2894663,602,2023-12-13,Savings,Medium,1,145494,None
+C000225,42,Other,USA,California,Mumbai,Doctor,746906,393,2015-01-22,Current,Low,3,58598,None
+C000226,23,Male,Germany,California,Hyderabad,Analyst,2449332,717,2016-02-28,Savings,Low,5,53792,Closed
+C000227,56,Female,Germany,Tamil Nadu,Mumbai,Student,1926549,386,2023-02-16,Premium,High,2,304871,Closed
+C000228,28,Other,Germany,Karnataka,Bengaluru,Doctor,1563036,574,2020-07-12,Savings,Low,4,149683,Active
+C000229,37,Female,India,Maharashtra,Mumbai,Teacher,2921581,807,2021-08-29,Premium,Low,1,76035,Active
+C000230,18,Female,UK,Texas,Delhi,Developer,1682198,750,2018-10-03,Current,Medium,5,76368,Active
+C000231,38,Other,USA,California,Mumbai,Teacher,1970337,626,2018-04-08,Premium,Low,4,306926,None
+C000232,38,Female,UK,California,Mumbai,Engineer,2664960,504,2021-08-22,Premium,Low,5,19111,Closed
+C000233,47,Other,USA,California,London,Doctor,590072,718,2022-07-19,Current,Low,3,131888,Active
+C000234,60,Male,Germany,California,Chennai,Student,2807916,790,2021-07-12,Current,Low,4,290026,None
+C000235,68,Female,Canada,Texas,San Francisco,Engineer,758728,554,2022-05-17,Premium,Low,5,28224,Closed
+C000236,59,Other,Germany,Maharashtra,London,Student,744363,310,2016-02-08,Current,Low,5,297549,Closed
+C000237,62,Other,USA,California,Mumbai,Student,2242227,812,2016-09-09,Current,High,4,59813,Active
+C000238,44,Male,India,Karnataka,Mumbai,Doctor,1738925,766,2023-10-18,Savings,Low,3,254646,None
+C000239,46,Other,Germany,Maharashtra,Chennai,Doctor,487414,417,2015-04-03,Current,Low,2,492547,Closed
+C000240,33,Other,USA,Texas,Bengaluru,Doctor,2648176,736,2025-09-30,Current,Low,4,335175,None
+C000241,29,Other,Germany,California,Chennai,Manager,2875751,502,2020-01-16,Premium,Low,1,374484,None
+C000242,31,Female,India,Texas,Chennai,Developer,2551875,491,2019-02-07,Current,Low,1,142548,Closed
+C000243,49,Other,UK,Texas,Delhi,Analyst,1946448,416,2018-11-26,Current,Medium,5,95454,Closed
+C000244,63,Female,Canada,Texas,Chennai,Manager,861817,620,2016-04-27,Savings,Low,2,200719,Closed
+C000245,27,Other,Germany,California,Hyderabad,Teacher,2710911,692,2019-09-29,Savings,Low,5,368558,Closed
+C000246,29,Other,USA,California,Mumbai,Teacher,1084748,622,2024-06-10,Current,Low,3,10024,Active
+C000247,26,Male,Germany,Texas,Hyderabad,Manager,2376054,718,2022-09-05,Current,Low,4,261219,None
+C000248,23,Other,India,Karnataka,Mumbai,Engineer,1452816,530,2021-01-11,Current,Low,4,301563,Closed
+C000249,67,Female,Canada,Texas,Chennai,Analyst,779017,574,2023-09-10,Premium,Medium,3,289186,None
+C000250,66,Other,Germany,Texas,Bengaluru,Student,729565,553,2018-05-04,Savings,Low,3,457040,None
+C000251,46,Male,USA,Karnataka,London,Manager,2765931,659,2024-08-27,Premium,Low,4,92022,Closed
+C000252,26,Male,USA,Tamil Nadu,Hyderabad,Doctor,2532547,587,2021-09-10,Premium,Low,3,156693,Closed
+C000253,35,Other,India,Karnataka,London,Developer,2026359,360,2018-02-09,Premium,Low,2,135902,None
+C000254,63,Female,USA,California,Delhi,Teacher,2721898,575,2022-01-15,Current,Low,1,337203,None
+C000255,43,Other,UK,Maharashtra,Delhi,Student,1672750,895,2015-01-11,Premium,Low,4,337839,Closed
+C000256,62,Female,India,Texas,Delhi,Teacher,2102053,516,2020-07-19,Current,Low,3,182080,Closed
+C000257,54,Male,Canada,California,London,Doctor,503043,347,2016-02-12,Premium,Medium,4,13536,None
+C000258,28,Female,Germany,Tamil Nadu,Delhi,Teacher,853283,609,2016-10-13,Current,Low,3,136276,None
+C000259,41,Other,USA,Tamil Nadu,Delhi,Manager,1581398,539,2019-10-25,Premium,Low,1,5569,None
+C000260,48,Male,USA,Texas,Bengaluru,Analyst,2166745,309,2015-02-03,Premium,Low,1,456066,Active
+C000261,62,Male,Germany,Tamil Nadu,Bengaluru,Student,674681,404,2016-02-27,Current,Low,3,76895,Active
+C000262,67,Male,USA,Tamil Nadu,Hyderabad,Analyst,335545,468,2019-12-08,Current,Medium,2,487289,Active
+C000263,57,Other,Germany,Karnataka,Chennai,Engineer,887257,426,2021-08-11,Premium,Low,4,169890,None
+C000264,33,Female,India,Karnataka,Hyderabad,Analyst,2816615,591,2023-09-26,Premium,Low,3,112712,Closed
+C000265,56,Other,USA,California,Mumbai,Manager,528879,545,2020-07-20,Current,Low,4,339538,Closed
+C000266,22,Other,India,Maharashtra,Mumbai,Teacher,1922517,882,2019-09-20,Current,Low,2,404888,Active
+C000267,67,Male,India,Texas,Chennai,Engineer,1399684,520,2015-06-13,Savings,High,4,270609,Active
+C000268,58,Other,Canada,California,Delhi,Manager,1987273,384,2022-03-08,Premium,Low,2,150473,None
+C000269,37,Male,Canada,Karnataka,London,Teacher,2549783,634,2019-05-20,Premium,Low,1,167618,Closed
+C000270,45,Other,USA,Tamil Nadu,Bengaluru,Engineer,2122356,418,2020-02-01,Premium,Low,3,354217,Closed
+C000271,60,Other,USA,Tamil Nadu,Chennai,Manager,875507,311,2016-11-02,Current,High,5,276173,Closed
+C000272,34,Male,UK,Karnataka,San Francisco,Developer,1427279,420,2023-08-26,Savings,Low,4,147596,Closed
+C000273,22,Female,Canada,Tamil Nadu,Delhi,Student,2442374,668,2015-08-16,Current,Medium,2,197774,None
+C000274,34,Male,Canada,Tamil Nadu,Bengaluru,Manager,2434166,302,2015-06-30,Savings,Low,4,195828,Active
+C000275,27,Male,India,Texas,London,Manager,2058962,529,2018-08-11,Savings,Low,3,147217,None
+C000276,54,Female,India,Texas,San Francisco,Engineer,1052224,528,2024-01-08,Premium,High,4,41137,Active
+C000277,36,Female,UK,Tamil Nadu,Hyderabad,Student,333425,677,2017-04-01,Current,Low,3,392750,Closed
+C000278,33,Female,UK,Texas,Delhi,Developer,1119661,859,2023-07-12,Savings,Low,4,17535,None
+C000279,52,Female,India,Maharashtra,Chennai,Developer,1878211,614,2016-03-01,Savings,Low,2,225104,Active
+C000280,21,Male,UK,Tamil Nadu,Chennai,Teacher,2480028,722,2022-11-10,Current,Low,1,309491,None
+C000281,50,Male,Germany,Tamil Nadu,Hyderabad,Analyst,561233,745,2022-06-06,Savings,Low,3,451123,Active
+C000282,69,Female,UK,Maharashtra,Delhi,Doctor,1279836,376,2025-07-31,Savings,Low,5,62133,None
+C000283,24,Male,Germany,California,Mumbai,Student,806406,848,2019-01-07,Savings,Low,4,143940,None
+C000284,23,Male,UK,Texas,Chennai,Teacher,1674866,451,2016-01-09,Premium,Low,3,212746,Closed
+C000285,21,Other,UK,Maharashtra,London,Teacher,430367,714,2024-08-01,Current,Low,5,135994,None
+C000286,47,Male,USA,Tamil Nadu,Chennai,Engineer,1232344,433,2017-03-22,Current,Low,1,310305,Closed
+C000287,34,Male,India,Tamil Nadu,Bengaluru,Manager,2159885,431,2016-01-12,Current,Low,4,31548,None
+C000288,54,Female,Germany,California,Chennai,Student,2089558,476,2018-12-20,Savings,High,3,151724,Active
+C000289,27,Male,Canada,Texas,Hyderabad,Teacher,1537760,810,2019-08-15,Premium,Low,1,151683,Active
+C000290,26,Female,USA,Texas,Bengaluru,Manager,2580261,319,2019-04-16,Premium,Low,5,414697,Active
+C000291,40,Other,Canada,Maharashtra,Delhi,Doctor,1054202,326,2018-07-30,Premium,Low,3,35718,Active
+C000292,51,Female,Canada,Karnataka,Bengaluru,Engineer,1339587,546,2017-12-27,Premium,Medium,1,405582,None
+C000293,54,Female,UK,Karnataka,Bengaluru,Teacher,2785206,625,2024-01-16,Premium,Low,5,19788,Closed
+C000294,62,Female,Canada,Texas,Bengaluru,Analyst,1089509,804,2021-01-29,Current,Low,1,52320,None
+C000295,32,Other,USA,Tamil Nadu,Hyderabad,Student,302866,639,2025-04-17,Premium,Low,2,183655,Closed
+C000296,29,Female,India,Tamil Nadu,Bengaluru,Analyst,894134,413,2024-06-29,Premium,Medium,1,200869,Closed
+C000297,60,Female,Canada,Tamil Nadu,Mumbai,Doctor,1653095,439,2025-12-11,Savings,Medium,4,420153,Closed
+C000298,49,Other,UK,Karnataka,San Francisco,Analyst,2874082,665,2017-07-03,Premium,Low,2,203382,Active
+C000299,64,Other,UK,Karnataka,Bengaluru,Manager,307540,886,2019-05-23,Premium,Low,5,171837,Closed
+C000300,32,Other,Canada,Tamil Nadu,Delhi,Teacher,1689021,379,2017-09-01,Current,High,2,338545,None
+C000301,70,Other,UK,California,Chennai,Doctor,1179479,555,2022-10-10,Savings,Low,1,382704,None
+C000302,21,Female,Germany,California,Bengaluru,Student,2368135,687,2018-12-09,Premium,Low,4,418521,Closed
+C000303,59,Other,USA,Karnataka,Delhi,Engineer,440143,601,2015-03-24,Current,Low,1,43902,Active
+C000304,28,Female,USA,Tamil Nadu,Hyderabad,Engineer,1717467,794,2022-11-25,Savings,Low,2,323409,Active
+C000305,28,Male,India,Maharashtra,Bengaluru,Teacher,2016644,867,2023-02-05,Premium,Low,3,160923,None
+C000306,24,Male,Germany,Texas,Hyderabad,Developer,2359186,457,2015-08-12,Current,Low,1,159428,Closed
+C000307,58,Other,Germany,Karnataka,Chennai,Engineer,1168023,474,2022-02-27,Current,High,4,447378,None
+C000308,37,Female,Germany,California,San Francisco,Doctor,682255,857,2019-05-07,Savings,Low,4,198672,None
+C000309,46,Male,UK,California,Delhi,Doctor,1248928,575,2021-04-30,Savings,Low,1,49935,Closed
+C000310,40,Other,Germany,Texas,Bengaluru,Analyst,555784,696,2024-03-06,Premium,Low,5,365221,Active
+C000311,54,Male,Germany,Maharashtra,Chennai,Student,445661,814,2021-05-28,Premium,Medium,5,82305,None
+C000312,66,Female,USA,Karnataka,Bengaluru,Developer,1108351,429,2015-06-24,Current,Low,4,110863,Closed
+C000313,27,Other,UK,Maharashtra,San Francisco,Developer,581068,389,2019-05-09,Premium,Low,3,454117,Active
+C000314,51,Female,India,Texas,Hyderabad,Analyst,2059904,415,2019-08-25,Savings,Low,5,310490,None
+C000315,24,Other,India,Maharashtra,London,Analyst,1742291,720,2017-12-17,Current,Low,5,324271,Active
+C000316,20,Male,UK,California,Bengaluru,Analyst,2852885,711,2015-06-08,Current,Medium,3,367028,None
+C000317,21,Other,Germany,Maharashtra,Mumbai,Engineer,1717113,610,2018-06-27,Current,Medium,1,460553,None
+C000318,26,Female,Germany,Maharashtra,Mumbai,Manager,2048071,391,2017-02-08,Current,Low,4,393468,Active
+C000319,66,Other,UK,Tamil Nadu,Hyderabad,Developer,966778,367,2018-06-28,Premium,Low,2,414215,Closed
+C000320,54,Male,USA,Karnataka,London,Teacher,541707,555,2015-05-16,Current,Low,3,374431,None
+C000321,35,Female,Germany,Texas,Delhi,Manager,819560,331,2017-09-17,Current,Low,4,98104,Active
+C000322,55,Other,UK,Maharashtra,Bengaluru,Developer,1384898,392,2018-03-13,Savings,Low,2,452648,Closed
+C000323,67,Male,USA,Karnataka,San Francisco,Teacher,1428618,719,2020-10-03,Savings,Medium,1,253563,None
+C000324,59,Male,Canada,Tamil Nadu,Bengaluru,Doctor,2851579,612,2022-12-29,Premium,Low,4,474490,Active
+C000325,40,Female,UK,Karnataka,Delhi,Doctor,2483713,706,2021-07-22,Savings,Low,3,299365,Closed
+C000326,56,Other,UK,Maharashtra,San Francisco,Engineer,2320557,365,2018-10-09,Current,Low,3,141916,Closed
+C000327,63,Other,UK,Karnataka,Bengaluru,Analyst,1307899,358,2024-01-13,Premium,Low,3,361912,None
+C000328,64,Male,Germany,Maharashtra,Mumbai,Student,1997010,697,2023-04-06,Savings,Low,5,432826,None
+C000329,39,Other,USA,Texas,San Francisco,Developer,2295378,667,2020-09-08,Current,Medium,5,99967,Active
+C000330,24,Female,USA,Maharashtra,San Francisco,Developer,2644748,487,2025-08-14,Premium,Medium,1,121524,Active
+C000331,32,Other,UK,California,London,Doctor,1858949,566,2021-07-26,Current,Low,1,251696,None
+C000332,58,Other,Canada,Texas,Chennai,Student,1115975,812,2016-05-05,Premium,Low,3,221587,None
+C000333,27,Male,USA,Maharashtra,Delhi,Analyst,2219193,446,2018-07-19,Premium,Low,1,260632,Active
+C000334,58,Male,UK,Tamil Nadu,Chennai,Student,1447259,514,2023-07-15,Savings,Low,2,261679,None
+C000335,26,Other,Germany,California,Delhi,Student,2302361,692,2015-01-20,Savings,Low,3,12380,Active
+C000336,66,Other,USA,Tamil Nadu,San Francisco,Engineer,2928515,554,2017-07-15,Premium,Medium,3,72596,None
+C000337,42,Other,Canada,Maharashtra,Bengaluru,Engineer,491756,605,2025-08-20,Current,Low,5,317669,Closed
+C000338,39,Female,USA,Maharashtra,Delhi,Doctor,1090316,468,2025-08-19,Current,Low,2,386245,None
+C000339,31,Other,India,Texas,Hyderabad,Teacher,816578,675,2022-12-22,Premium,Medium,4,464561,Closed
+C000340,34,Other,Canada,Tamil Nadu,Hyderabad,Engineer,753460,320,2015-07-17,Premium,Low,4,204362,None
+C000341,53,Female,Germany,Karnataka,Bengaluru,Manager,2943717,309,2018-05-18,Current,Low,5,146545,Closed
+C000342,56,Other,USA,California,London,Engineer,2445742,420,2018-03-03,Savings,Medium,4,109148,Closed
+C000343,30,Female,Canada,Karnataka,Mumbai,Manager,2018642,602,2016-10-18,Savings,Low,2,365817,Active
+C000344,39,Male,India,Tamil Nadu,San Francisco,Engineer,763180,887,2022-07-03,Current,Low,1,413696,Closed
+C000345,22,Other,India,Maharashtra,San Francisco,Teacher,2215753,603,2017-12-17,Current,Low,2,463301,None
+C000346,36,Female,UK,California,San Francisco,Engineer,698452,346,2015-02-09,Savings,Low,2,177312,Active
+C000347,46,Other,UK,Tamil Nadu,Mumbai,Developer,1737483,487,2016-04-11,Current,Low,4,147518,Active
+C000348,62,Female,Germany,Karnataka,Chennai,Teacher,545980,463,2016-02-29,Current,High,4,425617,Closed
+C000349,61,Female,USA,Texas,Delhi,Developer,1804072,329,2024-09-03,Premium,Medium,2,258272,Active
+C000350,25,Female,Germany,Tamil Nadu,Chennai,Doctor,1618009,312,2022-11-25,Premium,Low,5,384465,Closed
+C000351,32,Other,UK,Texas,Hyderabad,Manager,2893082,397,2019-11-08,Premium,Medium,4,186272,Closed
+C000352,61,Other,Germany,Karnataka,London,Developer,2641865,355,2015-02-17,Premium,High,5,450039,Active
+C000353,49,Male,India,California,Mumbai,Teacher,1687873,584,2015-07-26,Premium,Low,4,216433,None
+C000354,23,Female,Germany,Texas,Delhi,Engineer,2390676,757,2018-07-18,Savings,High,1,58814,Active
+C000355,44,Male,Canada,Texas,Chennai,Developer,681243,611,2024-12-24,Premium,Low,4,183705,Active
+C000356,70,Male,USA,California,Mumbai,Analyst,2899453,784,2023-01-14,Premium,Low,4,64781,None
+C000357,66,Other,USA,Tamil Nadu,Mumbai,Doctor,2957767,598,2021-02-21,Premium,Low,1,29000,None
+C000358,49,Male,Germany,Tamil Nadu,Mumbai,Analyst,1121754,492,2016-05-09,Current,Low,2,380803,Active
+C000359,24,Female,India,Texas,Chennai,Developer,2189553,768,2022-05-21,Premium,High,2,266529,None
+C000360,51,Other,India,Texas,Delhi,Developer,2754174,794,2025-05-14,Premium,Medium,2,367711,Closed
+C000361,29,Other,USA,Tamil Nadu,Delhi,Manager,2818872,629,2020-08-26,Current,Low,5,485200,Closed
+C000362,66,Male,UK,California,Mumbai,Doctor,2199372,436,2016-07-19,Current,Low,5,161716,Closed
+C000363,53,Female,Canada,Karnataka,Bengaluru,Teacher,2917948,597,2022-09-13,Current,High,2,377452,Closed
+C000364,29,Other,Canada,Maharashtra,San Francisco,Engineer,1777392,875,2020-05-21,Premium,Low,4,358497,Closed
+C000365,52,Female,Germany,Tamil Nadu,Hyderabad,Engineer,405999,690,2016-08-18,Savings,Low,2,144973,None
+C000366,36,Other,UK,Karnataka,London,Engineer,1537909,508,2023-06-14,Premium,Low,4,58729,Closed
+C000367,61,Other,Canada,Karnataka,San Francisco,Manager,2654139,698,2017-08-31,Premium,Medium,3,368298,Closed
+C000368,21,Female,Germany,California,London,Manager,1611365,865,2015-08-09,Savings,Medium,2,330353,Active
+C000369,32,Other,UK,Texas,Hyderabad,Manager,2830788,501,2023-09-15,Premium,High,3,240308,None
+C000370,61,Male,USA,Karnataka,San Francisco,Analyst,800606,686,2015-06-16,Current,Low,3,73192,None
+C000371,55,Female,India,Maharashtra,Delhi,Manager,949302,340,2016-09-21,Current,Low,5,447048,Closed
+C000372,37,Female,Canada,Texas,Mumbai,Engineer,1633197,838,2017-06-19,Savings,Low,5,88556,Active
+C000373,52,Other,Germany,Tamil Nadu,Mumbai,Teacher,1194870,639,2018-09-18,Current,Low,5,283134,Active
+C000374,53,Other,India,Tamil Nadu,San Francisco,Doctor,2169263,546,2025-02-21,Premium,Low,5,132835,None
+C000375,61,Female,Germany,Tamil Nadu,Delhi,Doctor,2565919,589,2015-04-12,Premium,Medium,3,274646,Closed
+C000376,46,Female,India,Maharashtra,San Francisco,Teacher,1643489,826,2015-12-04,Savings,Low,5,284553,None
+C000377,58,Male,USA,Karnataka,London,Manager,2079263,406,2017-04-22,Premium,Medium,4,343984,None
+C000378,65,Other,USA,Tamil Nadu,Delhi,Manager,1691315,338,2015-12-25,Savings,Low,3,297596,None
+C000379,54,Male,UK,California,Delhi,Student,2943322,714,2019-11-09,Current,Low,1,285407,None
+C000380,59,Other,Canada,Tamil Nadu,London,Manager,2756218,346,2022-11-10,Savings,Low,5,60645,Active
+C000381,68,Other,UK,Texas,Chennai,Doctor,2135746,690,2019-06-07,Premium,Low,2,284690,None
+C000382,26,Other,Germany,Texas,Mumbai,Manager,904296,605,2022-08-06,Premium,Low,1,295206,Closed
+C000383,27,Male,India,Tamil Nadu,Hyderabad,Analyst,1952898,850,2021-02-20,Savings,Low,3,116011,Active
+C000384,59,Other,USA,Karnataka,Bengaluru,Teacher,2887402,558,2017-03-06,Savings,Low,5,451825,None
+C000385,66,Other,Germany,Texas,Chennai,Doctor,582539,556,2016-02-07,Savings,Medium,4,178461,Active
+C000386,26,Other,USA,Tamil Nadu,Mumbai,Analyst,592799,498,2018-07-25,Current,Low,5,350727,Active
+C000387,62,Other,USA,Texas,Hyderabad,Doctor,1626797,738,2016-11-21,Savings,Low,2,378397,Closed
+C000388,59,Female,UK,Maharashtra,Bengaluru,Manager,1690675,791,2020-03-10,Current,Low,3,260313,Closed
+C000389,24,Male,Canada,Tamil Nadu,London,Doctor,887209,851,2017-03-15,Current,Medium,1,386380,None
+C000390,19,Other,India,Texas,Hyderabad,Student,2774791,517,2025-03-01,Savings,Low,5,473706,Closed
+C000391,48,Other,USA,Maharashtra,Delhi,Teacher,2772964,597,2016-07-02,Current,Low,1,213029,Active
+C000392,50,Male,USA,Texas,San Francisco,Teacher,2456445,443,2020-01-02,Savings,Low,5,350722,None
+C000393,65,Other,Germany,Maharashtra,Chennai,Teacher,2345319,537,2015-09-15,Current,Low,1,355531,None
+C000394,51,Female,Germany,California,Delhi,Engineer,467372,631,2016-02-27,Premium,High,3,442713,Closed
+C000395,34,Other,Canada,Texas,Bengaluru,Student,1887621,674,2021-08-04,Premium,Medium,1,275880,Active
+C000396,42,Male,Canada,California,Mumbai,Developer,1747170,798,2023-11-21,Current,Medium,1,268107,None
+C000397,46,Male,USA,Tamil Nadu,Hyderabad,Manager,1477800,516,2016-09-07,Savings,Low,5,381073,None
+C000398,60,Male,Germany,Maharashtra,San Francisco,Engineer,2319627,790,2020-05-16,Savings,Low,4,16768,None
+C000399,20,Male,Canada,Texas,Bengaluru,Teacher,2940483,824,2015-06-10,Premium,Low,2,140402,None
+C000400,51,Female,Canada,Texas,San Francisco,Engineer,1488894,387,2017-06-06,Current,Low,4,459716,Active
+C000401,28,Male,Germany,Texas,Bengaluru,Developer,2743795,486,2021-12-27,Premium,Low,2,384682,Closed
+C000402,39,Female,Canada,Texas,Chennai,Teacher,1886333,694,2016-06-25,Savings,Low,5,455673,Closed
+C000403,61,Female,USA,Texas,Chennai,Teacher,2295940,339,2024-11-04,Premium,Low,1,53858,Active
+C000404,60,Male,Canada,Texas,London,Engineer,2109828,834,2019-09-20,Current,Medium,5,229896,None
+C000405,69,Female,Germany,Maharashtra,Hyderabad,Developer,2716425,400,2019-10-09,Savings,Low,2,482146,None
+C000406,36,Other,Canada,California,Mumbai,Teacher,322940,307,2021-06-25,Premium,Low,1,201623,Closed
+C000407,31,Other,UK,California,Mumbai,Engineer,949188,736,2022-04-22,Premium,Low,5,227068,Closed
+C000408,41,Other,UK,California,London,Teacher,2033204,865,2023-10-16,Premium,Low,3,298126,Closed
+C000409,48,Female,UK,Texas,Mumbai,Developer,1969877,441,2024-08-03,Premium,Low,2,239144,Closed
+C000410,28,Male,USA,Texas,Delhi,Developer,1719511,863,2021-11-20,Premium,Low,1,89273,Active
+C000411,58,Male,India,Karnataka,Delhi,Analyst,2126105,390,2015-09-20,Current,Low,1,324306,None
+C000412,64,Female,Germany,Texas,San Francisco,Analyst,1501539,358,2025-08-09,Savings,Low,4,10615,None
+C000413,60,Other,UK,Karnataka,Chennai,Developer,2814547,822,2020-10-13,Premium,Low,2,358382,None
+C000414,41,Male,India,Karnataka,Chennai,Doctor,1975346,661,2022-07-05,Current,Low,2,276446,None
+C000415,65,Other,India,Tamil Nadu,Hyderabad,Doctor,2645093,896,2018-11-26,Current,High,3,123644,Closed
+C000416,30,Female,Germany,Texas,Chennai,Doctor,1034149,716,2020-09-04,Savings,Low,5,159272,Active
+C000417,25,Other,UK,Texas,London,Developer,2711279,556,2022-10-14,Current,High,5,258561,None
+C000418,66,Female,Germany,California,Hyderabad,Developer,414717,793,2016-04-21,Current,Low,2,359897,Closed
+C000419,32,Female,Germany,Maharashtra,Hyderabad,Analyst,340782,569,2017-10-13,Current,Low,3,44860,Closed
+C000420,29,Female,UK,Maharashtra,Bengaluru,Analyst,1428585,487,2025-08-15,Premium,Low,2,266619,Closed
+C000421,30,Male,USA,Maharashtra,Bengaluru,Teacher,1150464,555,2024-05-18,Premium,Low,1,67850,None
+C000422,61,Other,Germany,Texas,Chennai,Developer,2571106,343,2024-07-05,Current,Low,3,263128,Closed
+C000423,35,Female,USA,Texas,Mumbai,Student,1231524,890,2016-06-09,Savings,Low,4,255777,Closed
+C000424,20,Other,UK,California,London,Manager,1033165,768,2025-12-13,Savings,Low,4,170492,Closed
+C000425,18,Male,USA,California,Hyderabad,Engineer,1664978,670,2021-11-14,Current,Low,3,129329,Active
+C000426,48,Other,UK,Maharashtra,Bengaluru,Student,2078145,515,2019-09-13,Premium,Medium,3,452912,Active
+C000427,35,Female,USA,Texas,Bengaluru,Analyst,1258678,402,2023-01-31,Current,Medium,5,231607,Active
+C000428,30,Male,USA,California,London,Engineer,1040744,731,2020-08-08,Savings,High,5,284960,Closed
+C000429,38,Female,UK,Maharashtra,Hyderabad,Developer,2681670,348,2019-06-20,Savings,Low,1,117966,Active
+C000430,48,Other,India,California,San Francisco,Doctor,1389550,669,2019-01-15,Premium,Low,3,185428,None
+C000431,44,Male,UK,Texas,Bengaluru,Analyst,2715476,851,2016-12-15,Current,Low,5,260587,Closed
+C000432,46,Male,Germany,Texas,Mumbai,Student,2949592,448,2024-09-26,Savings,Low,3,226153,Closed
+C000433,57,Other,Germany,Tamil Nadu,Chennai,Teacher,1741269,533,2018-07-08,Current,Low,3,322396,Closed
+C000434,43,Female,Germany,Maharashtra,San Francisco,Analyst,2484962,761,2019-08-23,Savings,Low,1,70556,Closed
+C000435,33,Other,UK,Tamil Nadu,Bengaluru,Teacher,1965329,405,2016-01-27,Savings,High,4,292537,None
+C000436,19,Female,Canada,Tamil Nadu,Chennai,Doctor,2892508,459,2015-12-12,Premium,High,4,167199,None
+C000437,33,Other,UK,California,San Francisco,Teacher,850616,839,2024-05-27,Savings,Low,3,456081,Active
+C000438,48,Female,Canada,Maharashtra,Hyderabad,Student,866712,852,2016-12-26,Premium,Low,5,233053,Closed
+C000439,58,Other,Canada,Maharashtra,Mumbai,Student,2563532,532,2024-01-10,Savings,Low,3,221113,Active
+C000440,27,Female,India,Tamil Nadu,Hyderabad,Developer,871685,652,2018-03-20,Current,Low,4,401085,Active
+C000441,37,Male,Germany,Maharashtra,Hyderabad,Teacher,330274,861,2019-03-11,Savings,Low,5,234169,Active
+C000442,33,Male,Germany,California,Bengaluru,Doctor,632229,732,2022-01-05,Savings,Low,5,428401,Closed
+C000443,61,Female,UK,Texas,London,Doctor,2031844,492,2024-07-27,Savings,Low,3,62858,Closed
+C000444,47,Other,Germany,Maharashtra,San Francisco,Analyst,2363580,492,2018-08-06,Savings,Low,5,16602,None
+C000445,24,Female,UK,Karnataka,San Francisco,Student,334410,538,2016-01-05,Savings,Low,2,184260,Active
+C000446,37,Female,UK,California,San Francisco,Developer,433115,638,2015-11-25,Savings,Low,4,42426,Closed
+C000447,48,Male,USA,Maharashtra,London,Student,352913,424,2025-12-05,Premium,Low,4,134584,Closed
+C000448,20,Male,Germany,Tamil Nadu,Hyderabad,Manager,1174290,784,2019-05-13,Premium,High,3,88158,Closed
+C000449,64,Male,Canada,Texas,Chennai,Doctor,2318423,605,2017-03-24,Current,Medium,2,64207,None
+C000450,58,Female,UK,Tamil Nadu,Bengaluru,Developer,1458047,898,2016-05-05,Current,Medium,1,27016,Closed
+C000451,68,Other,Germany,Texas,Bengaluru,Doctor,675305,554,2016-10-07,Current,Low,5,182430,Closed
+C000452,21,Male,UK,Karnataka,San Francisco,Analyst,750433,428,2020-06-21,Savings,Low,5,418433,Closed
+C000453,66,Female,Germany,Karnataka,Chennai,Manager,1884477,666,2023-02-15,Savings,Low,1,259438,Closed
+C000454,46,Other,UK,Texas,San Francisco,Student,1095977,880,2017-02-03,Premium,Low,4,149349,Closed
+C000455,53,Male,India,Texas,Bengaluru,Student,1540141,569,2021-01-27,Current,Low,5,203727,Closed
+C000456,29,Male,Canada,Maharashtra,London,Analyst,1301543,628,2023-02-01,Savings,Low,5,434417,Active
+C000457,30,Other,Germany,Texas,Bengaluru,Analyst,1487529,630,2019-08-06,Premium,Low,1,279307,Closed
+C000458,22,Male,USA,Karnataka,London,Engineer,1147580,409,2020-06-11,Savings,Low,5,341462,Active
+C000459,60,Female,Canada,Texas,San Francisco,Analyst,1373484,350,2019-02-09,Savings,Low,1,11860,None
+C000460,59,Female,India,California,London,Manager,554595,669,2021-04-04,Premium,High,4,435978,Active
+C000461,68,Other,India,Texas,Mumbai,Analyst,470511,372,2024-05-10,Current,Low,2,277359,None
+C000462,24,Other,USA,Texas,Delhi,Teacher,1110001,838,2022-05-14,Savings,Low,2,297774,Closed
+C000463,53,Female,India,Texas,Mumbai,Manager,2224013,737,2024-11-25,Savings,Low,2,293340,Active
+C000464,50,Female,USA,Texas,Hyderabad,Student,1777754,622,2021-03-03,Current,Medium,4,405652,Closed
+C000465,45,Other,UK,Texas,Bengaluru,Analyst,2588522,519,2019-03-17,Premium,High,3,193748,Active
+C000466,46,Female,India,Tamil Nadu,Mumbai,Analyst,368377,830,2016-07-07,Current,Low,2,117629,Active
+C000467,19,Other,UK,Texas,Hyderabad,Analyst,2693555,885,2016-09-25,Savings,Low,3,86845,None
+C000468,34,Female,Canada,Karnataka,Bengaluru,Doctor,1559559,394,2021-05-25,Current,Low,2,389966,None
+C000469,64,Female,Germany,Karnataka,Delhi,Developer,2716894,397,2021-09-04,Premium,Low,5,205040,None
+C000470,67,Male,UK,Maharashtra,London,Student,2047018,423,2024-10-02,Savings,Medium,5,491881,None
+C000471,58,Other,Germany,Tamil Nadu,Mumbai,Analyst,472730,626,2021-01-20,Premium,Low,5,370831,None
+C000472,27,Male,Germany,California,London,Analyst,2712793,816,2016-01-04,Savings,Low,4,82601,None
+C000473,39,Male,Germany,Texas,San Francisco,Engineer,2599117,708,2017-12-11,Savings,Low,4,410707,Closed
+C000474,26,Male,Germany,Texas,Bengaluru,Student,1958087,885,2017-03-14,Premium,Low,5,134103,None
+C000475,22,Female,Germany,Maharashtra,San Francisco,Analyst,675787,415,2022-07-14,Current,Low,3,104871,Active
+C000476,40,Other,India,Maharashtra,Bengaluru,Doctor,2884618,752,2021-12-27,Savings,Low,2,109692,Closed
+C000477,41,Male,India,Tamil Nadu,San Francisco,Engineer,1319418,451,2024-09-28,Current,Low,1,164969,Active
+C000478,48,Male,UK,Karnataka,San Francisco,Analyst,1188669,508,2021-02-16,Premium,Medium,5,258244,Closed
+C000479,64,Male,India,California,Hyderabad,Manager,2509555,344,2017-11-12,Savings,Low,2,418762,Closed
+C000480,57,Female,India,California,San Francisco,Engineer,579331,697,2022-05-28,Current,Low,3,458132,None
+C000481,19,Female,Germany,Karnataka,Delhi,Analyst,717768,623,2020-06-08,Premium,Low,2,109267,Closed
+C000482,47,Other,India,Tamil Nadu,Bengaluru,Analyst,1578958,641,2020-06-29,Current,Medium,1,186812,Closed
+C000483,40,Female,UK,Karnataka,Hyderabad,Doctor,560087,563,2024-11-08,Current,Medium,1,499999,Closed
+C000484,35,Male,USA,Maharashtra,Delhi,Manager,875713,389,2023-03-09,Current,Low,5,462546,Closed
+C000485,61,Male,Germany,Karnataka,Hyderabad,Teacher,2088723,619,2025-03-15,Premium,Low,5,74086,None
+C000486,59,Male,Canada,Texas,San Francisco,Developer,1148550,441,2018-06-19,Premium,Medium,5,481872,None
+C000487,45,Male,Canada,Karnataka,Mumbai,Engineer,2637654,845,2025-08-21,Premium,Low,3,445151,None
+C000488,64,Male,UK,California,Delhi,Doctor,2158095,580,2016-09-14,Savings,Low,2,18735,Closed
+C000489,57,Female,Canada,Texas,Hyderabad,Teacher,2801318,537,2017-08-03,Premium,Low,1,365784,Active
+C000490,26,Other,Canada,California,San Francisco,Manager,1868499,488,2024-07-22,Current,Low,2,90871,None
+C000491,32,Male,Germany,Tamil Nadu,Mumbai,Student,1233460,507,2023-07-01,Savings,Low,4,459625,Closed
+C000492,49,Other,UK,California,Bengaluru,Student,1998134,342,2021-10-26,Premium,Medium,3,211648,Closed
+C000493,65,Other,Canada,Texas,Hyderabad,Manager,461530,833,2016-03-23,Current,Low,1,465209,None
+C000494,51,Other,Germany,Tamil Nadu,Hyderabad,Student,2464792,350,2017-02-16,Current,Low,3,410629,Active
+C000495,47,Male,Germany,Maharashtra,Hyderabad,Engineer,2468327,445,2020-03-13,Premium,Low,5,64334,None
+C000496,67,Other,Canada,Karnataka,Delhi,Student,1656693,761,2015-04-13,Savings,Low,2,467709,Active
+C000497,23,Female,UK,Karnataka,San Francisco,Manager,818182,393,2016-04-12,Premium,Low,3,49725,Closed
+C000498,63,Female,Canada,Texas,Bengaluru,Student,2608317,689,2015-06-29,Savings,High,5,461814,Closed
+C000499,27,Male,USA,Karnataka,London,Manager,515211,729,2018-06-15,Current,Medium,4,156404,Closed
+C000500,29,Male,USA,Karnataka,Chennai,Analyst,1361624,312,2020-02-22,Current,Medium,5,428338,None
+C000501,56,Female,USA,Karnataka,Hyderabad,Manager,2295280,764,2019-08-07,Current,Low,5,8446,None
+C000502,53,Female,Canada,Texas,London,Developer,1170895,350,2017-01-27,Savings,Low,3,24252,None
+C000503,20,Other,Canada,Texas,Mumbai,Doctor,667851,350,2016-03-22,Current,High,2,357368,Active
+C000504,57,Other,Canada,Texas,London,Analyst,1044150,766,2023-05-28,Premium,Low,1,53824,Active
+C000505,38,Female,Germany,Tamil Nadu,London,Student,2608843,366,2018-04-14,Current,Low,3,177600,Closed
+C000506,44,Other,USA,Karnataka,Hyderabad,Engineer,758446,885,2023-03-08,Premium,Low,1,258578,Closed
+C000507,62,Other,UK,California,Hyderabad,Developer,1627449,565,2020-11-22,Premium,High,3,491070,None
+C000508,57,Other,Germany,Texas,San Francisco,Manager,2387677,804,2024-01-23,Savings,Medium,2,376503,Active
+C000509,30,Male,India,Tamil Nadu,Delhi,Manager,794616,512,2023-12-20,Premium,High,4,28851,Active
+C000510,40,Other,USA,Tamil Nadu,San Francisco,Teacher,1481228,560,2023-11-11,Savings,Low,5,293355,Active
+C000511,67,Male,India,Maharashtra,Mumbai,Student,2686229,329,2024-05-01,Savings,Low,3,488540,Closed
+C000512,48,Female,India,Karnataka,Delhi,Teacher,2930669,771,2025-01-01,Premium,Medium,4,416036,Active
+C000513,65,Male,Canada,Maharashtra,Hyderabad,Manager,1623314,868,2021-01-03,Savings,Low,3,424186,Active
+C000514,22,Male,UK,Tamil Nadu,Mumbai,Student,2927776,847,2024-06-12,Savings,Low,4,103240,Closed
+C000515,25,Female,UK,Tamil Nadu,Mumbai,Student,664056,808,2024-11-01,Savings,Low,3,118319,Closed
+C000516,37,Male,India,Maharashtra,London,Engineer,1147662,394,2019-12-23,Premium,Low,4,479457,Closed
+C000517,27,Male,UK,California,San Francisco,Developer,2496254,617,2023-09-12,Current,Low,1,436037,Closed
+C000518,61,Male,USA,Tamil Nadu,Delhi,Student,2490873,418,2015-01-17,Current,High,5,462113,None
+C000519,39,Female,India,Tamil Nadu,Hyderabad,Developer,1610639,323,2021-06-23,Current,Low,2,173233,None
+C000520,30,Female,UK,Texas,Mumbai,Developer,2150173,420,2018-01-21,Savings,Low,1,12998,Closed
+C000521,53,Other,India,Karnataka,Hyderabad,Doctor,2604206,626,2018-01-15,Savings,High,3,305984,None
+C000522,28,Male,UK,Texas,Mumbai,Analyst,2160793,351,2016-06-16,Savings,Low,1,60536,Active
+C000523,21,Male,Germany,California,Bengaluru,Manager,2800314,756,2021-11-29,Current,Low,2,378764,Closed
+C000524,69,Other,India,California,Hyderabad,Teacher,689718,779,2016-02-03,Current,Low,4,251701,None
+C000525,32,Male,Canada,Maharashtra,Mumbai,Student,1069038,638,2023-11-05,Current,Low,1,39270,Active
+C000526,25,Female,Germany,California,London,Teacher,1483873,656,2021-10-11,Premium,Low,1,217696,Closed
+C000527,68,Male,UK,Texas,San Francisco,Engineer,1567175,845,2020-03-03,Current,Low,2,330517,None
+C000528,53,Male,Germany,California,Chennai,Doctor,1173414,741,2023-10-18,Current,Low,3,290488,Closed
+C000529,33,Male,India,Texas,London,Student,779504,774,2018-08-25,Premium,Low,4,97365,Active
+C000530,43,Male,Canada,Tamil Nadu,San Francisco,Developer,2801505,688,2018-09-03,Current,Low,1,52465,None
+C000531,70,Male,Canada,Tamil Nadu,London,Teacher,925859,763,2020-12-16,Current,Low,5,239440,None
+C000532,31,Other,UK,Maharashtra,Hyderabad,Developer,1577375,745,2023-01-19,Current,High,5,9256,Closed
+C000533,50,Female,USA,Maharashtra,Chennai,Doctor,2602191,354,2015-01-04,Premium,Low,3,62513,Active
+C000534,19,Male,Germany,Texas,Delhi,Manager,1634322,691,2019-07-22,Current,Low,2,352334,None
+C000535,48,Male,USA,Texas,Delhi,Developer,1811156,727,2016-09-23,Current,High,2,75400,None
+C000536,22,Other,India,Karnataka,San Francisco,Student,2131799,439,2015-12-13,Savings,Low,4,455967,Active
+C000537,68,Other,Canada,California,Hyderabad,Teacher,2205868,821,2019-10-04,Premium,Medium,4,191283,None
+C000538,29,Female,Canada,Tamil Nadu,Hyderabad,Student,1293001,813,2018-01-07,Current,High,5,197397,None
+C000539,20,Other,Germany,Maharashtra,Chennai,Analyst,2319695,381,2016-08-04,Premium,Medium,3,248760,Closed
+C000540,23,Other,Canada,Tamil Nadu,Bengaluru,Student,2945191,379,2022-09-02,Premium,Low,5,168839,Closed
+C000541,21,Female,Canada,Tamil Nadu,Delhi,Student,2450264,780,2021-06-08,Premium,Low,3,423498,Active
+C000542,36,Male,India,Texas,San Francisco,Doctor,2664355,566,2015-09-09,Premium,Low,2,305343,None
+C000543,60,Female,Canada,Tamil Nadu,Mumbai,Student,646072,429,2020-09-01,Savings,Medium,3,137147,None
+C000544,57,Female,UK,Maharashtra,Chennai,Manager,767872,478,2025-03-16,Premium,Medium,4,198864,None
+C000545,34,Other,USA,California,Bengaluru,Developer,2512029,333,2018-11-05,Savings,High,5,494654,None
+C000546,49,Female,Germany,Karnataka,San Francisco,Student,2974181,471,2017-05-13,Premium,Medium,3,33482,Closed
+C000547,34,Male,India,Karnataka,Delhi,Student,2297461,608,2020-05-04,Premium,High,5,127505,Active
+C000548,61,Other,Germany,California,Mumbai,Teacher,2524835,745,2015-02-18,Current,High,4,205280,Closed
+C000549,38,Other,India,Tamil Nadu,Hyderabad,Manager,1784062,742,2021-11-05,Premium,Medium,3,146728,Active
+C000550,69,Male,UK,Texas,Delhi,Student,1314169,499,2020-10-30,Current,Low,2,169243,Closed
+C000551,18,Other,India,Tamil Nadu,Chennai,Student,709778,837,2016-03-01,Premium,Low,2,385240,Active
+C000552,34,Male,India,Tamil Nadu,Hyderabad,Engineer,538580,522,2025-08-29,Premium,Low,1,50291,Closed
+C000553,26,Female,Canada,Karnataka,Chennai,Manager,1072855,559,2018-04-21,Current,Low,1,339904,Active
+C000554,35,Female,UK,Maharashtra,Bengaluru,Developer,610366,583,2023-09-19,Savings,Low,3,36488,Active
+C000555,70,Female,USA,California,Chennai,Student,1141667,702,2016-12-31,Premium,Low,2,288446,Active
+C000556,31,Other,India,California,San Francisco,Doctor,733217,335,2015-10-26,Savings,Low,3,412496,Active
+C000557,19,Female,USA,Tamil Nadu,Chennai,Manager,1937807,572,2016-09-12,Premium,Low,4,306276,None
+C000558,50,Other,Germany,California,Delhi,Student,594019,853,2017-07-14,Savings,Low,4,68545,Closed
+C000559,52,Female,UK,Maharashtra,Delhi,Engineer,2951943,392,2019-02-05,Premium,Medium,3,47182,Active
+C000560,66,Female,USA,Karnataka,Hyderabad,Engineer,1911299,495,2018-05-09,Premium,Low,1,335624,Closed
+C000561,40,Female,India,California,San Francisco,Teacher,886963,336,2017-03-01,Savings,Medium,5,130034,Active
+C000562,42,Male,Canada,Maharashtra,Delhi,Analyst,2184531,316,2015-06-01,Current,Low,1,217602,None
+C000563,31,Other,Canada,California,San Francisco,Developer,2550501,452,2023-04-24,Premium,Low,1,24334,Closed
+C000564,27,Female,India,California,Hyderabad,Engineer,1317884,433,2015-02-28,Savings,Low,3,435303,None
+C000565,47,Other,USA,Texas,Chennai,Developer,745985,416,2020-07-29,Premium,Medium,2,38087,None
+C000566,45,Female,Germany,Maharashtra,Chennai,Manager,2715780,858,2016-07-16,Current,Medium,2,405675,None
+C000567,55,Male,UK,Tamil Nadu,Chennai,Doctor,892390,725,2016-11-19,Premium,Low,2,234984,None
+C000568,55,Male,USA,Tamil Nadu,London,Developer,2951616,685,2023-09-21,Savings,Low,4,47321,None
+C000569,18,Male,India,Texas,Mumbai,Student,2296541,429,2017-04-24,Savings,Low,5,241149,Active
+C000570,33,Male,Canada,Tamil Nadu,Hyderabad,Teacher,2396680,390,2022-01-12,Current,Low,1,297400,None
+C000571,30,Male,Canada,Tamil Nadu,Hyderabad,Doctor,2563761,819,2017-06-17,Current,Medium,2,149927,None
+C000572,30,Male,USA,California,Delhi,Teacher,970080,344,2015-08-10,Premium,Low,2,232893,Active
+C000573,39,Other,Germany,Tamil Nadu,Chennai,Manager,520018,850,2016-12-21,Savings,Medium,4,274957,None
+C000574,22,Male,Germany,Texas,Hyderabad,Doctor,2057691,503,2023-05-19,Premium,Medium,2,413407,None
+C000575,38,Male,India,Karnataka,San Francisco,Student,1138675,684,2024-12-30,Savings,Low,5,258969,None
+C000576,45,Male,USA,Texas,Delhi,Teacher,1924581,682,2016-07-12,Current,Medium,3,146397,None
+C000577,39,Male,India,Texas,Chennai,Doctor,872528,413,2024-07-20,Current,Low,2,403636,Active
+C000578,32,Female,Canada,Karnataka,London,Developer,2975962,474,2021-06-25,Premium,Medium,1,220847,Closed
+C000579,49,Male,Canada,California,London,Student,1470927,314,2023-03-10,Current,Medium,2,134935,Active
+C000580,45,Other,USA,Texas,Bengaluru,Analyst,321296,727,2015-07-01,Savings,High,5,22626,Active
+C000581,51,Female,Germany,Tamil Nadu,Delhi,Student,1308778,385,2021-04-06,Savings,Low,4,119298,None
+C000582,40,Female,USA,Tamil Nadu,Chennai,Student,1578577,465,2022-11-20,Current,Medium,5,17799,Active
+C000583,47,Male,Germany,Karnataka,London,Developer,1853656,775,2022-11-23,Premium,Low,1,206787,Closed
+C000584,39,Other,India,Maharashtra,Delhi,Developer,1431578,855,2021-06-14,Savings,Medium,1,330297,Active
+C000585,65,Male,Canada,Maharashtra,Chennai,Engineer,1906229,674,2020-03-21,Premium,Low,3,96890,Closed
+C000586,53,Other,India,Texas,San Francisco,Developer,1158626,441,2018-10-03,Savings,Low,4,391599,Closed
+C000587,62,Male,USA,Maharashtra,Mumbai,Doctor,2412108,733,2018-02-09,Savings,Low,3,242193,Active
+C000588,50,Other,India,California,San Francisco,Analyst,2534957,599,2020-01-26,Premium,Low,1,103751,Active
+C000589,23,Male,Germany,Karnataka,Mumbai,Engineer,758709,468,2018-02-04,Savings,Low,4,83904,None
+C000590,51,Other,India,Maharashtra,Delhi,Manager,2570942,435,2020-04-25,Current,Low,1,157838,None
+C000591,22,Male,USA,Texas,San Francisco,Doctor,2026760,892,2018-11-05,Premium,Low,3,259881,Closed
+C000592,60,Other,Canada,Texas,Delhi,Student,1575413,880,2016-06-24,Current,Low,3,123899,Active
+C000593,41,Female,India,Karnataka,Mumbai,Doctor,2212294,470,2021-12-08,Savings,Medium,3,100567,None
+C000594,63,Other,USA,Karnataka,Bengaluru,Engineer,472601,624,2021-06-11,Savings,Low,3,101729,None
+C000595,53,Other,India,Maharashtra,Mumbai,Teacher,1864118,759,2021-01-20,Savings,Low,1,487572,None
+C000596,43,Female,USA,California,Mumbai,Teacher,318011,859,2025-12-10,Premium,Low,3,253465,Active
+C000597,66,Other,USA,Texas,San Francisco,Student,1720545,415,2023-03-16,Current,High,2,360471,Closed
+C000598,25,Female,India,California,Hyderabad,Developer,1224276,756,2019-01-03,Savings,Low,5,341232,None
+C000599,55,Other,USA,Maharashtra,Bengaluru,Engineer,650599,851,2024-07-11,Current,Low,1,273324,Active
+C000600,30,Female,UK,Texas,Hyderabad,Analyst,535080,669,2019-06-17,Savings,Medium,4,198792,Active
+C000601,41,Male,UK,Maharashtra,Mumbai,Doctor,2168881,874,2015-12-25,Savings,Medium,4,393774,Active
+C000602,69,Female,UK,Karnataka,London,Manager,2077681,724,2016-07-25,Premium,Low,2,113938,Active
+C000603,48,Other,UK,Tamil Nadu,Hyderabad,Developer,1876103,390,2015-01-28,Current,Low,3,222324,None
+C000604,53,Female,Canada,Karnataka,Bengaluru,Teacher,1901257,596,2021-03-18,Current,Low,3,442563,Closed
+C000605,37,Female,Canada,California,Bengaluru,Engineer,310262,457,2017-12-11,Current,High,4,70104,Closed
+C000606,60,Female,Germany,Karnataka,Delhi,Manager,1326557,329,2016-05-03,Current,Low,1,318991,Closed
+C000607,41,Other,Germany,Texas,Delhi,Developer,1381759,787,2025-12-04,Premium,Medium,3,273711,Closed
+C000608,54,Male,UK,Karnataka,Hyderabad,Engineer,912943,627,2020-03-03,Premium,Low,2,32728,Active
+C000609,41,Female,UK,Tamil Nadu,Mumbai,Doctor,2521355,378,2020-10-05,Savings,Medium,2,405917,None
+C000610,56,Male,Canada,Maharashtra,London,Doctor,1562788,577,2022-09-08,Premium,Low,1,285190,Closed
+C000611,40,Male,India,Karnataka,Hyderabad,Doctor,1864534,796,2019-08-15,Current,High,2,58696,None
+C000612,27,Other,USA,Karnataka,London,Analyst,2872905,838,2024-06-27,Premium,Medium,1,223809,Active
+C000613,22,Male,USA,Tamil Nadu,Delhi,Doctor,1606833,671,2016-07-23,Current,Medium,5,279266,Active
+C000614,29,Other,UK,Tamil Nadu,San Francisco,Developer,797431,527,2016-06-11,Premium,Low,2,166180,None
+C000615,31,Male,India,California,San Francisco,Developer,768596,379,2015-03-19,Current,Medium,1,107944,None
+C000616,20,Other,Canada,Texas,Chennai,Student,798795,559,2015-06-27,Savings,Low,1,400601,None
+C000617,68,Male,Canada,Karnataka,Hyderabad,Teacher,1075031,659,2015-04-30,Savings,Low,3,308956,Active
+C000618,40,Male,Canada,Texas,Bengaluru,Analyst,2691740,369,2016-02-10,Premium,Medium,5,118769,Closed
+C000619,30,Female,USA,Texas,Chennai,Manager,713917,519,2025-04-28,Premium,Medium,4,197132,Closed
+C000620,55,Male,Germany,Tamil Nadu,Bengaluru,Developer,1788232,688,2019-10-04,Savings,Low,4,64163,Active
+C000621,25,Female,India,Texas,Bengaluru,Student,1815194,595,2021-04-01,Premium,Low,3,263847,None
+C000622,42,Female,Germany,Texas,San Francisco,Doctor,2162085,531,2021-03-18,Current,Low,4,103977,None
+C000623,69,Female,UK,Karnataka,Chennai,Manager,2362122,407,2019-06-12,Current,Low,1,67504,None
+C000624,43,Female,Canada,Tamil Nadu,San Francisco,Teacher,571415,672,2025-12-08,Savings,Low,5,447514,Active
+C000625,25,Male,Germany,California,Mumbai,Developer,2740743,579,2023-06-25,Premium,High,3,254470,Closed
+C000626,56,Female,Germany,Texas,Mumbai,Teacher,2206876,410,2016-05-15,Current,Low,2,334447,None
+C000627,19,Male,India,Tamil Nadu,Delhi,Manager,412192,483,2019-04-17,Premium,Low,2,163729,Closed
+C000628,57,Male,India,Texas,London,Student,2254637,506,2018-04-17,Premium,Low,5,142187,Closed
+C000629,39,Other,Canada,Tamil Nadu,London,Engineer,2105255,421,2019-04-21,Current,Low,4,237026,Active
+C000630,20,Male,USA,Texas,San Francisco,Developer,1571061,468,2020-07-06,Current,Low,4,260566,None
+C000631,54,Other,Germany,Texas,San Francisco,Analyst,2700023,781,2020-05-03,Premium,Medium,5,34222,Active
+C000632,34,Female,Canada,California,Hyderabad,Manager,1779598,591,2018-08-05,Savings,Low,1,72212,Active
+C000633,40,Other,Canada,Tamil Nadu,London,Manager,1731333,689,2016-02-03,Current,Low,3,220969,Active
+C000634,21,Other,USA,Karnataka,Bengaluru,Manager,1609040,386,2025-03-17,Premium,Low,3,65015,Active
+C000635,28,Male,Canada,Maharashtra,Chennai,Student,2071980,881,2020-10-09,Current,Low,4,313275,None
+C000636,38,Female,Canada,California,Mumbai,Analyst,709891,800,2016-02-14,Premium,Low,3,265430,Closed
+C000637,69,Other,UK,Karnataka,Hyderabad,Doctor,1823934,746,2017-04-06,Current,Low,1,445601,Closed
+C000638,31,Female,UK,Tamil Nadu,Mumbai,Analyst,1986224,531,2022-01-02,Premium,High,5,54667,Closed
+C000639,39,Female,India,Texas,London,Analyst,2293420,737,2017-05-09,Current,Medium,3,269576,Active
+C000640,45,Other,Canada,Maharashtra,Bengaluru,Student,1987372,557,2022-01-03,Premium,Low,5,99686,None
+C000641,58,Other,Canada,Karnataka,Hyderabad,Student,1193188,778,2018-01-02,Premium,Low,5,452099,Active
+C000642,54,Other,India,Texas,Bengaluru,Doctor,2239809,451,2017-09-11,Savings,Medium,3,447563,Active
+C000643,44,Female,India,Karnataka,London,Student,1419605,593,2022-03-31,Savings,Low,5,128800,Active
+C000644,33,Male,USA,Karnataka,Chennai,Teacher,1602501,775,2020-06-11,Premium,High,4,344173,None
+C000645,30,Male,UK,Karnataka,Chennai,Doctor,1465060,863,2016-12-21,Premium,Medium,4,415115,None
+C000646,21,Male,UK,Texas,Mumbai,Developer,566680,716,2025-01-21,Current,Low,1,213087,Closed
+C000647,26,Male,India,Texas,San Francisco,Analyst,806011,834,2022-06-13,Premium,High,5,137019,Active
+C000648,23,Male,Canada,Tamil Nadu,London,Developer,1614538,637,2024-05-02,Premium,Medium,2,495471,Active
+C000649,31,Male,India,Karnataka,Bengaluru,Doctor,2143293,718,2017-11-07,Premium,Low,5,201453,Closed
+C000650,25,Female,Canada,California,Delhi,Manager,1333252,584,2024-11-11,Savings,Low,3,435632,Active
+C000651,19,Other,Canada,Tamil Nadu,London,Manager,529312,545,2017-11-02,Premium,Low,3,478514,Closed
+C000652,25,Other,USA,California,Delhi,Engineer,1948258,561,2018-05-17,Savings,High,2,160935,None
+C000653,28,Female,UK,California,London,Engineer,1449392,382,2024-03-25,Current,Low,4,490751,Active
+C000654,63,Female,India,Karnataka,San Francisco,Doctor,2423720,367,2018-12-12,Current,Low,5,391812,Active
+C000655,47,Other,India,Tamil Nadu,San Francisco,Manager,1070659,754,2023-11-15,Premium,Low,4,109897,Closed
+C000656,37,Female,Canada,Tamil Nadu,Chennai,Teacher,1346913,828,2023-01-01,Premium,Medium,5,364532,Active
+C000657,68,Female,Germany,California,London,Manager,859980,566,2016-12-11,Premium,Low,3,424183,Active
+C000658,30,Male,Germany,Maharashtra,Bengaluru,Student,1882594,884,2017-07-08,Savings,High,5,344270,Closed
+C000659,58,Male,India,California,Bengaluru,Doctor,1007813,350,2019-07-01,Premium,Low,3,83250,None
+C000660,41,Male,Canada,Tamil Nadu,Chennai,Manager,2505523,745,2023-09-03,Current,Medium,4,67134,None
+C000661,63,Male,USA,Maharashtra,Mumbai,Manager,2372691,691,2016-06-17,Current,Medium,5,118018,Active
+C000662,64,Other,USA,California,Bengaluru,Student,912128,329,2018-04-03,Current,Low,4,480701,None
+C000663,41,Other,Germany,Tamil Nadu,Chennai,Student,858701,631,2025-12-05,Premium,Low,2,378993,Active
+C000664,63,Female,Canada,Maharashtra,Chennai,Engineer,2636227,360,2015-08-02,Current,High,4,481172,Active
+C000665,56,Other,Canada,Tamil Nadu,Chennai,Doctor,2416202,690,2018-05-24,Current,Low,2,472783,Closed
+C000666,20,Other,USA,Maharashtra,Bengaluru,Analyst,2367120,647,2024-11-04,Current,Low,3,377378,Closed
+C000667,45,Male,UK,Tamil Nadu,Mumbai,Engineer,836331,811,2024-10-10,Current,Medium,4,153334,Active
+C000668,57,Female,Canada,Maharashtra,Delhi,Teacher,1623482,803,2023-07-26,Savings,Low,4,32903,None
+C000669,27,Male,USA,Karnataka,Chennai,Student,1391458,467,2022-12-01,Current,Low,4,26386,Active
+C000670,40,Other,Canada,California,Delhi,Student,771820,451,2016-05-21,Current,Low,3,99715,None
+C000671,65,Other,UK,Texas,San Francisco,Analyst,1190854,897,2025-11-23,Savings,Low,5,99670,Active
+C000672,22,Male,Germany,Tamil Nadu,Mumbai,Engineer,1492361,424,2019-06-03,Current,Low,1,443817,Active
+C000673,27,Male,India,California,London,Manager,2312658,764,2022-01-17,Current,Low,1,177714,None
+C000674,59,Other,Germany,Maharashtra,San Francisco,Manager,2687223,432,2017-05-15,Savings,Medium,3,174434,None
+C000675,65,Male,Canada,Texas,Delhi,Engineer,1972933,561,2016-12-30,Savings,High,4,51760,None
+C000676,31,Male,Germany,California,Mumbai,Manager,946487,423,2018-05-07,Current,Medium,3,478817,Closed
+C000677,56,Male,UK,Tamil Nadu,London,Doctor,2450223,504,2020-06-28,Current,Medium,4,145760,Closed
+C000678,56,Female,India,California,London,Doctor,2874748,490,2019-11-14,Premium,Low,1,274138,Active
+C000679,47,Other,USA,Karnataka,Delhi,Analyst,2940564,837,2015-12-10,Current,Low,1,480638,Active
+C000680,37,Male,USA,Maharashtra,London,Teacher,2494007,737,2018-04-25,Premium,Low,1,485930,None
+C000681,50,Male,Canada,California,Delhi,Engineer,2248910,882,2024-02-12,Current,Low,5,47870,Closed
+C000682,19,Male,Germany,Karnataka,London,Teacher,1948182,346,2015-12-08,Current,Medium,3,169598,Closed
+C000683,64,Female,Germany,Texas,London,Doctor,1731660,491,2017-05-14,Savings,Low,5,140957,Closed
+C000684,24,Female,Canada,Tamil Nadu,Chennai,Student,789384,313,2016-12-04,Premium,Low,4,460491,Closed
+C000685,65,Other,Germany,Maharashtra,Hyderabad,Developer,2886815,669,2022-09-29,Premium,High,4,426863,Active
+C000686,23,Male,USA,Tamil Nadu,Bengaluru,Engineer,366627,492,2024-08-19,Savings,Low,2,345650,None
+C000687,45,Other,Canada,Karnataka,Chennai,Doctor,2243747,451,2020-04-25,Current,Low,2,478125,None
+C000688,65,Other,Germany,California,Delhi,Engineer,2185407,899,2017-09-20,Savings,Low,4,31697,Active
+C000689,18,Male,Germany,California,London,Student,2727081,867,2018-04-06,Savings,Low,4,274146,Closed
+C000690,64,Other,Germany,Karnataka,San Francisco,Engineer,2515887,319,2019-09-25,Premium,Low,1,145429,Closed
+C000691,44,Female,India,California,Hyderabad,Manager,1754434,759,2022-10-28,Current,Low,3,385742,None
+C000692,48,Female,Germany,Karnataka,Hyderabad,Teacher,2764819,647,2025-05-03,Premium,Medium,4,73764,Active
+C000693,64,Other,Germany,California,London,Manager,1811021,783,2023-12-20,Savings,Low,3,367124,Closed
+C000694,23,Other,Germany,Karnataka,Bengaluru,Teacher,955628,803,2016-02-18,Current,High,4,164201,None
+C000695,31,Other,India,Tamil Nadu,Mumbai,Doctor,1797550,462,2016-12-16,Premium,Low,1,182070,Active
+C000696,25,Other,USA,Tamil Nadu,Hyderabad,Teacher,2339963,564,2018-10-25,Current,Medium,5,145242,None
+C000697,62,Other,Canada,Tamil Nadu,San Francisco,Engineer,2136378,768,2025-10-18,Savings,High,5,324635,None
+C000698,70,Other,India,Texas,Chennai,Teacher,2942101,420,2024-10-07,Savings,High,2,386864,Active
+C000699,63,Female,Canada,California,San Francisco,Developer,716470,457,2022-04-04,Current,Low,2,69478,None
+C000700,46,Female,India,Karnataka,London,Developer,2286688,649,2018-03-20,Premium,Low,3,200263,Closed
+C000701,66,Female,UK,Karnataka,Bengaluru,Developer,2521514,731,2023-10-30,Savings,Low,4,221745,Active
+C000702,47,Other,UK,Tamil Nadu,Delhi,Teacher,341727,829,2025-08-01,Savings,Low,3,215580,None
+C000703,45,Male,Germany,Tamil Nadu,San Francisco,Manager,933138,888,2015-08-25,Premium,High,5,160044,Active
+C000704,43,Other,Canada,Maharashtra,San Francisco,Manager,1615733,652,2015-02-02,Current,High,5,487581,None
+C000705,62,Female,Germany,Karnataka,Hyderabad,Analyst,2892866,752,2022-10-27,Current,Medium,4,411533,None
+C000706,37,Male,India,Texas,Mumbai,Student,828505,832,2021-01-24,Current,Low,5,294294,Active
+C000707,51,Female,USA,Tamil Nadu,Chennai,Developer,2564641,564,2017-09-15,Current,Medium,5,62903,Closed
+C000708,21,Female,UK,Texas,Mumbai,Engineer,500206,427,2020-01-13,Current,Low,1,242579,Active
+C000709,33,Other,Canada,Texas,San Francisco,Manager,2536774,539,2018-12-05,Current,Low,5,357548,None
+C000710,63,Female,Canada,Karnataka,Chennai,Doctor,2466155,896,2017-02-27,Current,Low,2,378104,Active
+C000711,44,Male,India,Tamil Nadu,Delhi,Teacher,2297550,519,2020-01-02,Savings,Low,5,216158,Closed
+C000712,53,Other,Germany,Maharashtra,Hyderabad,Student,2969511,733,2019-12-08,Premium,High,4,388630,Active
+C000713,70,Male,USA,Texas,Bengaluru,Student,2219786,432,2025-11-09,Premium,Low,5,66896,Closed
+C000714,31,Female,Germany,Tamil Nadu,San Francisco,Teacher,2644727,678,2025-05-03,Savings,Low,4,62847,None
+C000715,41,Other,UK,Tamil Nadu,Hyderabad,Teacher,793846,680,2018-06-02,Current,Low,4,19668,None
+C000716,27,Other,Germany,Tamil Nadu,Mumbai,Doctor,1204214,487,2024-03-09,Premium,Low,1,292067,Active
+C000717,22,Male,Germany,California,Hyderabad,Doctor,2672986,763,2025-02-04,Current,Medium,4,442497,Closed
+C000718,56,Male,USA,Texas,San Francisco,Student,2187140,759,2016-09-02,Premium,Low,5,353390,Closed
+C000719,44,Female,USA,California,Mumbai,Analyst,492181,753,2023-04-03,Current,Low,2,375780,None
+C000720,54,Other,UK,Texas,San Francisco,Engineer,2646095,387,2017-02-27,Premium,Low,1,303972,Closed
+C000721,30,Female,Canada,Tamil Nadu,Chennai,Manager,2530780,484,2025-10-16,Savings,Low,2,133600,Closed
+C000722,55,Female,India,Texas,Hyderabad,Doctor,1985262,346,2020-07-06,Savings,Low,2,222546,None
+C000723,51,Female,Germany,Maharashtra,Chennai,Engineer,716635,854,2016-11-19,Current,Low,3,407812,None
+C000724,27,Female,Germany,Karnataka,Chennai,Analyst,1664368,485,2015-04-22,Premium,Low,4,56770,Active
+C000725,27,Female,UK,Maharashtra,Delhi,Developer,807369,353,2017-04-09,Savings,Medium,5,128989,Active
+C000726,50,Other,Germany,Tamil Nadu,Mumbai,Engineer,1635199,775,2021-03-15,Current,Low,1,218644,Closed
+C000727,32,Male,UK,Texas,Hyderabad,Manager,725761,552,2023-07-23,Premium,Low,2,164704,Closed
+C000728,44,Female,India,Texas,Bengaluru,Developer,897130,682,2021-01-22,Savings,Medium,5,227168,Closed
+C000729,46,Male,India,California,London,Analyst,1513200,471,2015-01-03,Savings,High,4,148289,Closed
+C000730,34,Other,Germany,Maharashtra,London,Manager,1192355,899,2024-06-05,Premium,Low,2,392544,Closed
+C000731,54,Male,UK,Tamil Nadu,Delhi,Manager,815802,443,2023-02-17,Premium,High,4,115546,Closed
+C000732,50,Female,UK,Maharashtra,London,Manager,2198837,579,2017-10-04,Premium,High,3,115427,Active
+C000733,56,Female,India,Karnataka,San Francisco,Engineer,2853436,787,2015-01-18,Savings,Low,4,296394,Closed
+C000734,63,Female,Germany,Texas,Chennai,Developer,625155,851,2015-05-07,Premium,Low,1,190070,Active
+C000735,70,Other,UK,California,Bengaluru,Developer,335363,427,2020-03-10,Current,High,4,9909,None
+C000736,65,Male,UK,Maharashtra,Bengaluru,Engineer,2872965,610,2024-01-25,Premium,Low,4,195316,None
+C000737,35,Female,Canada,Karnataka,Chennai,Teacher,2977795,705,2016-03-30,Current,Low,4,94379,Closed
+C000738,30,Other,Canada,Texas,Hyderabad,Teacher,574142,431,2023-05-14,Savings,Low,5,453517,None
+C000739,51,Other,UK,Karnataka,London,Manager,396961,845,2021-11-21,Current,Low,4,6024,Active
+C000740,59,Other,India,Maharashtra,Delhi,Developer,2006561,580,2016-05-13,Premium,Low,4,194515,Closed
+C000741,66,Male,USA,Tamil Nadu,Mumbai,Student,2533090,759,2018-07-19,Savings,Low,3,47891,Closed
+C000742,69,Male,USA,California,Chennai,Teacher,1125761,468,2018-09-10,Current,Low,1,19613,Active
+C000743,45,Male,Canada,Maharashtra,London,Doctor,1336637,410,2020-04-23,Savings,High,1,435772,Active
+C000744,51,Male,India,Texas,Hyderabad,Student,701272,757,2021-06-29,Savings,Low,1,485622,None
+C000745,42,Female,India,Karnataka,Chennai,Developer,2153540,356,2018-05-19,Premium,Low,1,58386,Closed
+C000746,21,Other,India,Maharashtra,London,Student,1984780,398,2021-12-03,Current,Low,5,417863,Closed
+C000747,57,Male,Germany,California,Delhi,Developer,2095605,403,2018-10-23,Premium,High,1,243066,Closed
+C000748,39,Other,USA,Tamil Nadu,Chennai,Engineer,2796345,369,2021-08-25,Savings,High,2,339162,Closed
+C000749,34,Female,Germany,California,San Francisco,Analyst,2164889,490,2017-09-22,Savings,Medium,1,71941,Active
+C000750,55,Female,Canada,Maharashtra,Mumbai,Analyst,2569721,449,2016-08-26,Current,Low,3,157601,Active
+C000751,18,Other,Canada,Karnataka,Chennai,Teacher,2426964,872,2024-08-18,Savings,Low,2,110052,Closed
+C000752,30,Male,UK,Karnataka,San Francisco,Student,2260427,639,2024-07-21,Premium,Low,3,328015,Active
+C000753,44,Female,USA,Tamil Nadu,Delhi,Developer,476966,807,2017-06-17,Savings,Low,2,249599,Closed
+C000754,31,Male,Germany,Maharashtra,London,Manager,1876688,510,2019-06-28,Savings,Medium,1,195220,None
+C000755,22,Female,India,Texas,Chennai,Teacher,1518764,750,2017-03-07,Premium,Low,3,28018,None
+C000756,30,Male,UK,Karnataka,Bengaluru,Doctor,1031002,647,2024-07-03,Premium,Low,2,16268,None
+C000757,34,Male,India,Karnataka,Delhi,Manager,765437,646,2025-07-01,Savings,Low,2,198798,Active
+C000758,60,Male,Canada,Texas,Delhi,Manager,574213,421,2016-08-14,Savings,Medium,2,284212,Active
+C000759,62,Female,UK,Texas,Delhi,Manager,1325715,347,2023-07-23,Premium,Low,5,159236,None
+C000760,38,Male,India,Maharashtra,London,Teacher,2431836,898,2024-12-07,Current,Low,1,416390,Active
+C000761,68,Other,Canada,Tamil Nadu,Bengaluru,Analyst,1927875,821,2019-03-13,Current,Low,2,173728,Closed
+C000762,41,Other,Germany,California,Delhi,Doctor,2737673,710,2022-02-26,Premium,Low,2,120094,None
+C000763,46,Male,Germany,Karnataka,Mumbai,Student,1881600,885,2016-10-05,Current,Low,1,75427,None
+C000764,36,Female,Canada,Maharashtra,Bengaluru,Analyst,472565,776,2020-09-29,Premium,Low,4,250131,Active
+C000765,44,Female,Germany,Maharashtra,Mumbai,Student,403675,483,2019-12-15,Savings,Low,1,193268,None
+C000766,36,Other,Canada,Texas,San Francisco,Engineer,1459410,533,2016-02-08,Savings,Low,1,291274,None
+C000767,39,Male,UK,Maharashtra,Mumbai,Manager,1451187,495,2022-11-30,Premium,High,5,483351,Active
+C000768,18,Female,UK,Maharashtra,London,Student,2001874,893,2023-07-01,Premium,Low,5,404067,None
+C000769,43,Male,USA,Karnataka,Delhi,Teacher,2463528,865,2023-07-01,Current,Medium,4,183603,None
+C000770,38,Male,Germany,California,Bengaluru,Student,2187319,871,2015-05-04,Current,Low,2,165207,Closed
+C000771,18,Female,UK,Maharashtra,Bengaluru,Student,2085596,713,2023-07-22,Premium,Low,3,312733,None
+C000772,54,Male,USA,Karnataka,Mumbai,Analyst,2941737,887,2024-09-21,Current,High,2,209805,None
+C000773,52,Female,USA,California,Chennai,Doctor,2688719,762,2022-03-02,Current,Low,1,358834,Closed
+C000774,29,Male,Canada,California,Chennai,Teacher,1134661,371,2025-03-21,Current,Low,2,157623,Closed
+C000775,51,Male,Germany,Tamil Nadu,Mumbai,Analyst,346334,475,2018-08-31,Current,Low,1,72705,Closed
+C000776,44,Female,India,California,London,Teacher,844975,510,2018-06-22,Current,Medium,4,88247,Closed
+C000777,54,Female,Canada,Karnataka,Hyderabad,Manager,2225002,582,2017-04-06,Savings,High,4,38538,Active
+C000778,56,Male,Canada,Maharashtra,Hyderabad,Student,2230237,773,2021-06-17,Savings,Medium,3,343846,Active
+C000779,40,Other,UK,California,Hyderabad,Developer,1034532,725,2017-10-17,Savings,Medium,4,245033,Active
+C000780,60,Male,Canada,Tamil Nadu,Delhi,Manager,483142,545,2024-12-06,Savings,Low,5,158034,Closed
+C000781,22,Other,USA,California,Delhi,Developer,2618711,424,2019-02-19,Savings,Medium,5,406887,Active
+C000782,44,Female,USA,Maharashtra,Bengaluru,Analyst,487213,773,2015-04-20,Savings,Low,4,204835,Active
+C000783,65,Female,USA,California,Chennai,Engineer,1351116,417,2022-12-14,Savings,Low,4,259153,Active
+C000784,22,Male,Canada,Karnataka,San Francisco,Student,888275,782,2024-03-14,Current,Medium,2,444613,None
+C000785,56,Male,USA,Maharashtra,Chennai,Analyst,1939341,472,2015-11-14,Premium,Medium,3,85476,Active
+C000786,40,Male,USA,Tamil Nadu,San Francisco,Analyst,1206668,752,2022-10-24,Savings,Medium,5,341074,Closed
+C000787,63,Other,India,California,San Francisco,Doctor,2162215,353,2021-09-16,Savings,Low,4,407188,None
+C000788,33,Female,USA,Karnataka,Chennai,Engineer,2068665,328,2015-03-01,Current,Medium,1,120641,None
+C000789,69,Other,USA,Karnataka,Chennai,Student,2449581,410,2024-02-23,Current,Low,2,332508,None
+C000790,52,Female,Germany,Tamil Nadu,Bengaluru,Teacher,744115,665,2018-08-17,Savings,Low,3,11281,Active
+C000791,31,Female,USA,Tamil Nadu,San Francisco,Developer,1467935,677,2015-06-29,Savings,Medium,4,163090,Closed
+C000792,49,Male,Canada,Texas,Bengaluru,Doctor,697387,632,2022-01-28,Premium,Low,2,179088,None
+C000793,58,Other,UK,California,Chennai,Doctor,374024,899,2020-01-13,Current,Low,2,268937,Closed
+C000794,63,Male,USA,Tamil Nadu,Hyderabad,Developer,820329,616,2017-08-26,Premium,Low,2,329935,None
+C000795,21,Male,UK,California,Mumbai,Teacher,936152,684,2017-04-17,Premium,Low,5,237640,Closed
+C000796,39,Male,UK,Maharashtra,San Francisco,Developer,466125,833,2023-11-18,Current,Low,3,398504,None
+C000797,32,Other,UK,Maharashtra,Bengaluru,Teacher,2562037,355,2025-03-02,Premium,High,2,323800,Active
+C000798,51,Female,USA,California,San Francisco,Engineer,571022,803,2015-10-14,Savings,Low,2,496926,None
+C000799,26,Male,USA,Texas,Hyderabad,Developer,1157203,541,2020-09-09,Savings,Low,4,168296,None
+C000800,64,Male,USA,California,Bengaluru,Analyst,1344253,610,2018-03-14,Premium,Low,2,147533,Active
+C000801,23,Female,Germany,California,Bengaluru,Student,2151265,732,2020-08-31,Premium,Medium,2,434708,Active
+C000802,19,Female,Germany,Tamil Nadu,London,Doctor,2796379,850,2016-09-17,Premium,Medium,3,204465,Active
+C000803,37,Female,UK,California,Hyderabad,Analyst,2316807,373,2018-09-26,Savings,Medium,2,86120,None
+C000804,18,Male,Canada,Maharashtra,Delhi,Student,2044076,704,2025-11-19,Premium,Low,4,166381,Closed
+C000805,55,Male,Germany,Tamil Nadu,Chennai,Student,2672334,466,2017-03-06,Current,High,3,272181,Closed
+C000806,49,Other,UK,Tamil Nadu,San Francisco,Student,2078554,552,2017-09-19,Current,Low,3,335800,Closed
+C000807,61,Male,USA,Maharashtra,Hyderabad,Student,918103,560,2017-10-10,Premium,Low,2,11468,None
+C000808,67,Male,Germany,California,San Francisco,Analyst,637005,830,2025-03-16,Savings,Medium,2,440027,Active
+C000809,34,Other,UK,Texas,Hyderabad,Manager,1905531,900,2018-06-15,Premium,Low,1,62291,Closed
+C000810,54,Female,USA,Maharashtra,San Francisco,Teacher,1969208,615,2015-01-27,Savings,Medium,1,55788,None
+C000811,67,Other,Germany,Texas,Delhi,Manager,1509386,741,2016-11-29,Savings,Low,2,108819,Active
+C000812,29,Other,India,California,Hyderabad,Developer,1191597,490,2017-04-03,Savings,Medium,2,140975,Active
+C000813,46,Other,Canada,Tamil Nadu,London,Manager,996783,381,2018-04-15,Savings,Low,3,38692,Active
+C000814,19,Other,USA,California,Delhi,Manager,722824,309,2015-09-08,Current,Medium,1,353820,Closed
+C000815,68,Male,India,Karnataka,Hyderabad,Developer,330458,684,2021-10-05,Premium,High,3,493703,Active
+C000816,48,Female,Canada,California,Mumbai,Doctor,1738971,622,2024-02-28,Savings,High,4,203409,Closed
+C000817,21,Female,UK,Tamil Nadu,Chennai,Student,1985306,442,2015-04-16,Premium,Low,5,151521,Closed
+C000818,66,Male,UK,California,Hyderabad,Manager,2293130,827,2019-08-20,Premium,Low,3,13719,Closed
+C000819,41,Male,UK,California,Bengaluru,Analyst,2332291,709,2023-04-16,Premium,Medium,3,229351,Active
+C000820,60,Other,India,California,Mumbai,Analyst,1118212,446,2024-10-02,Premium,Medium,5,21643,None
+C000821,49,Male,UK,Texas,London,Student,1004864,756,2025-09-16,Savings,Low,5,131301,None
+C000822,31,Male,India,Tamil Nadu,Delhi,Manager,422565,464,2025-06-02,Current,High,3,120540,Closed
+C000823,34,Other,Germany,Tamil Nadu,San Francisco,Teacher,2542037,803,2016-01-06,Premium,Low,2,493521,Closed
+C000824,67,Other,India,Maharashtra,Delhi,Manager,1900758,875,2025-11-01,Current,Medium,2,140839,None
+C000825,36,Male,India,Tamil Nadu,Mumbai,Manager,2783868,492,2023-05-08,Savings,Low,2,452390,Active
+C000826,42,Other,India,Maharashtra,Chennai,Analyst,2546481,494,2024-07-01,Current,High,3,409373,Active
+C000827,69,Other,USA,Texas,San Francisco,Analyst,2777894,527,2016-03-12,Current,Low,4,170636,None
+C000828,70,Female,USA,California,San Francisco,Student,918346,590,2016-08-20,Premium,Low,1,318985,Active
+C000829,37,Other,India,Maharashtra,London,Manager,2707412,789,2022-01-28,Savings,Low,4,35834,Active
+C000830,27,Other,USA,Karnataka,San Francisco,Manager,520479,483,2024-08-10,Current,Medium,3,432301,Closed
+C000831,28,Male,Canada,California,Mumbai,Student,2285674,656,2023-07-01,Current,Low,5,386028,Active
+C000832,36,Other,USA,Texas,Delhi,Engineer,849037,631,2023-06-09,Premium,Medium,1,450545,Closed
+C000833,37,Female,USA,Texas,Bengaluru,Student,2323507,598,2025-01-23,Savings,Low,2,390518,Closed
+C000834,18,Female,Canada,Tamil Nadu,San Francisco,Developer,919102,685,2025-08-28,Current,Low,2,490483,None
+C000835,24,Female,Germany,Karnataka,Chennai,Engineer,2461891,646,2021-08-27,Current,High,4,133451,None
+C000836,25,Male,Germany,California,Mumbai,Manager,2800457,476,2022-04-27,Premium,Low,1,412754,Active
+C000837,70,Other,Germany,Maharashtra,San Francisco,Manager,2166961,676,2015-02-17,Savings,Low,1,261491,Closed
+C000838,60,Other,USA,Tamil Nadu,Hyderabad,Analyst,2701786,791,2018-01-26,Premium,Medium,5,99946,Active
+C000839,48,Other,Germany,Maharashtra,Hyderabad,Teacher,717086,633,2015-09-18,Premium,High,5,101935,Active
+C000840,70,Other,India,California,Hyderabad,Developer,2549895,842,2020-06-24,Savings,Low,5,287581,Closed
+C000841,70,Other,India,Karnataka,San Francisco,Engineer,1057760,484,2015-01-22,Premium,Low,3,69511,None
+C000842,26,Other,USA,Karnataka,Chennai,Analyst,1376931,335,2015-12-13,Savings,Low,3,290436,None
+C000843,45,Other,India,Karnataka,Mumbai,Engineer,2478702,600,2022-05-23,Premium,Low,5,262133,Closed
+C000844,38,Other,UK,Texas,Hyderabad,Analyst,1180130,401,2022-06-07,Savings,Low,2,79274,Active
+C000845,31,Male,Canada,Texas,Bengaluru,Analyst,1806028,584,2016-06-10,Premium,Low,1,293279,Active
+C000846,34,Female,USA,California,Delhi,Engineer,1366105,735,2025-07-18,Premium,Low,2,41992,Closed
+C000847,64,Female,USA,Maharashtra,Hyderabad,Manager,2445082,467,2019-09-16,Savings,Low,4,203674,None
+C000848,56,Male,India,Maharashtra,Chennai,Analyst,761332,861,2019-07-25,Savings,Low,1,195221,Active
+C000849,67,Female,USA,Karnataka,Mumbai,Engineer,710818,686,2025-11-12,Savings,Low,1,415377,None
+C000850,29,Other,UK,Texas,London,Developer,2353609,397,2020-12-06,Current,Medium,3,294166,Active
+C000851,56,Male,India,Karnataka,Mumbai,Developer,1933947,485,2018-11-14,Premium,Low,5,294234,Closed
+C000852,43,Female,Canada,Karnataka,Mumbai,Engineer,2454049,459,2022-05-17,Savings,Low,5,390573,Active
+C000853,21,Other,UK,Karnataka,San Francisco,Analyst,2054241,768,2017-01-19,Current,High,4,268312,Active
+C000854,35,Female,Canada,Karnataka,Mumbai,Manager,664662,612,2019-07-24,Current,Medium,1,45209,Closed
+C000855,33,Male,USA,Texas,Chennai,Engineer,1498945,867,2025-06-04,Current,Medium,1,227289,Closed
+C000856,50,Other,USA,California,Delhi,Analyst,2533086,427,2019-07-19,Savings,Low,1,379425,Active
+C000857,62,Other,UK,Karnataka,San Francisco,Manager,2515059,343,2021-10-23,Current,High,5,478850,None
+C000858,29,Male,UK,Karnataka,Hyderabad,Doctor,513517,732,2020-07-22,Current,Low,1,182187,Closed
+C000859,33,Other,India,Maharashtra,Mumbai,Student,1531217,571,2017-05-22,Savings,Medium,5,211371,None
+C000860,37,Other,Canada,Tamil Nadu,Delhi,Analyst,2347937,358,2018-12-28,Savings,Low,3,161421,Active
+C000861,24,Male,UK,Karnataka,Delhi,Doctor,337177,403,2019-10-31,Current,Low,5,274651,None
+C000862,44,Male,Germany,Tamil Nadu,Bengaluru,Developer,1349141,531,2020-04-11,Current,Low,3,229574,None
+C000863,52,Female,India,California,San Francisco,Developer,2142795,465,2016-07-26,Current,Medium,1,193343,Closed
+C000864,30,Male,USA,Maharashtra,Chennai,Teacher,1954845,731,2023-05-06,Current,High,2,354283,None
+C000865,48,Other,UK,Tamil Nadu,Delhi,Student,2607385,807,2023-12-21,Premium,Medium,3,398787,Active
+C000866,50,Other,Germany,Karnataka,Chennai,Engineer,388718,429,2016-09-29,Current,Low,2,32283,Closed
+C000867,39,Female,Canada,Tamil Nadu,Delhi,Student,1514111,588,2020-06-13,Savings,Medium,2,328807,None
+C000868,64,Other,USA,Karnataka,Mumbai,Developer,782428,569,2022-11-11,Savings,Low,4,109025,Active
+C000869,63,Male,Canada,Texas,Bengaluru,Teacher,2779656,452,2017-07-28,Savings,Low,1,148582,None
+C000870,27,Female,India,Texas,Bengaluru,Engineer,513722,689,2019-07-27,Premium,Low,2,121274,Active
+C000871,45,Female,India,Texas,Delhi,Manager,516658,611,2016-03-26,Current,Low,3,378075,Active
+C000872,33,Female,India,Karnataka,Chennai,Engineer,518651,629,2017-05-18,Current,Low,5,57828,Active
+C000873,29,Female,Germany,Maharashtra,Mumbai,Doctor,767784,399,2022-07-03,Savings,Low,2,178650,Active
+C000874,65,Female,Canada,Texas,Hyderabad,Doctor,1299302,582,2017-05-10,Premium,Low,1,73411,Closed
+C000875,65,Other,India,Tamil Nadu,Hyderabad,Manager,1098736,497,2022-11-26,Current,High,1,498783,Closed
+C000876,57,Female,UK,California,London,Teacher,2537902,457,2015-06-29,Savings,Low,5,378084,Active
+C000877,66,Other,UK,Maharashtra,Delhi,Manager,792532,746,2015-10-05,Current,Low,5,419651,None
+C000878,28,Other,UK,Karnataka,Mumbai,Engineer,2674709,362,2023-11-28,Premium,Low,4,264536,Closed
+C000879,52,Other,India,Karnataka,Delhi,Developer,2436068,693,2021-04-22,Current,Low,3,113488,None
+C000880,18,Male,Canada,Karnataka,Hyderabad,Manager,337167,825,2020-02-09,Premium,Medium,5,140703,Active
+C000881,32,Female,UK,Texas,Chennai,Teacher,1239228,346,2020-12-25,Savings,Low,2,498903,Active
+C000882,26,Female,India,Karnataka,London,Teacher,2542253,418,2015-01-06,Premium,Low,5,198520,Active
+C000883,23,Other,Canada,Maharashtra,San Francisco,Teacher,2012714,601,2018-08-22,Savings,Low,1,436977,Active
+C000884,32,Other,UK,Karnataka,Mumbai,Engineer,2553971,897,2016-03-11,Premium,Medium,4,347792,Active
+C000885,58,Other,Canada,Texas,Bengaluru,Developer,2154657,525,2018-08-21,Current,Low,4,86600,Active
+C000886,32,Other,Germany,Maharashtra,Bengaluru,Student,692968,807,2017-01-13,Current,Low,2,104016,Closed
+C000887,49,Other,USA,Maharashtra,Chennai,Doctor,983330,481,2024-03-02,Current,Low,2,41413,None
+C000888,22,Female,USA,California,San Francisco,Student,720411,839,2016-07-16,Premium,Medium,1,321299,None
+C000889,42,Female,India,Tamil Nadu,London,Engineer,483459,435,2017-10-14,Savings,Low,5,12076,None
+C000890,68,Male,Canada,Maharashtra,London,Manager,656369,507,2016-07-24,Current,Medium,4,432538,None
+C000891,37,Female,Germany,Karnataka,Bengaluru,Engineer,2579715,573,2022-01-14,Premium,Low,1,58904,Closed
+C000892,36,Male,Canada,California,Bengaluru,Engineer,1240835,324,2017-07-17,Current,Low,3,348599,Active
+C000893,32,Other,Germany,Tamil Nadu,Delhi,Teacher,761942,529,2016-02-21,Current,Low,5,179967,None
+C000894,41,Male,India,Texas,Bengaluru,Teacher,2097797,843,2018-10-03,Premium,Low,4,83758,Closed
+C000895,61,Female,Canada,Maharashtra,Mumbai,Engineer,1437047,811,2022-06-03,Current,High,1,418587,None
+C000896,27,Other,USA,Maharashtra,Bengaluru,Student,2173576,789,2024-02-19,Savings,Low,4,386004,Active
+C000897,27,Male,UK,Karnataka,Bengaluru,Developer,1914880,661,2018-07-31,Current,Low,4,320486,Closed
+C000898,39,Male,USA,California,Delhi,Analyst,2384998,851,2020-12-26,Current,Low,2,206655,None
+C000899,55,Other,Germany,Texas,Hyderabad,Developer,1219953,389,2017-08-21,Current,Low,1,195001,Closed
+C000900,48,Male,India,Tamil Nadu,Mumbai,Doctor,884473,601,2020-02-29,Savings,Medium,5,493291,Active
+C000901,33,Male,USA,Tamil Nadu,San Francisco,Teacher,791722,446,2019-03-27,Premium,Low,4,199869,None
+C000902,62,Male,Canada,Tamil Nadu,Delhi,Developer,2791104,461,2015-05-04,Savings,Low,1,133474,None
+C000903,18,Other,Germany,Karnataka,London,Teacher,2270336,443,2023-05-23,Premium,Low,3,251512,Active
+C000904,64,Female,Germany,Tamil Nadu,Mumbai,Engineer,953838,361,2024-11-18,Premium,Low,2,268871,None
+C000905,18,Female,Germany,California,Hyderabad,Manager,1382358,885,2020-08-17,Current,Medium,4,493348,None
+C000906,35,Male,Canada,California,Bengaluru,Manager,1188623,710,2021-12-10,Savings,Low,2,436229,Closed
+C000907,53,Other,India,California,Delhi,Doctor,2992285,714,2024-04-11,Current,Low,3,344029,Active
+C000908,30,Female,India,Tamil Nadu,Chennai,Doctor,2829962,643,2015-04-25,Savings,Low,5,60818,None
+C000909,31,Other,India,Maharashtra,Bengaluru,Analyst,1146099,333,2017-09-11,Current,Low,5,301116,None
+C000910,54,Female,India,Tamil Nadu,Mumbai,Engineer,1594382,308,2018-12-31,Current,High,5,107175,Active
+C000911,66,Female,UK,Karnataka,San Francisco,Manager,708440,639,2019-07-27,Premium,Low,5,428359,None
+C000912,19,Other,Germany,California,Hyderabad,Developer,456901,597,2016-10-22,Savings,Low,1,469101,Closed
+C000913,23,Other,USA,Karnataka,London,Manager,890820,464,2025-10-22,Premium,Low,5,346518,Closed
+C000914,67,Female,Germany,Karnataka,Mumbai,Doctor,1811276,741,2015-06-13,Premium,Medium,4,130362,None
+C000915,57,Other,India,Karnataka,Hyderabad,Manager,2386761,399,2024-01-10,Savings,Low,3,291856,None
+C000916,49,Male,Germany,Maharashtra,Bengaluru,Doctor,977264,369,2018-02-21,Premium,Low,1,42294,None
+C000917,63,Female,UK,California,Mumbai,Developer,2154072,443,2025-07-16,Savings,High,4,25757,Active
+C000918,36,Female,Germany,Texas,San Francisco,Teacher,2148965,675,2020-09-30,Premium,High,3,48773,Closed
+C000919,44,Other,Germany,Maharashtra,San Francisco,Engineer,2903042,358,2023-04-24,Savings,Low,5,9164,None
+C000920,24,Female,Germany,Karnataka,Hyderabad,Student,606094,528,2019-05-10,Current,Low,3,249254,Active
+C000921,59,Other,Germany,Tamil Nadu,Chennai,Teacher,754445,706,2023-08-13,Current,Low,3,38801,Active
+C000922,39,Other,Germany,Karnataka,San Francisco,Manager,2297409,417,2018-02-14,Current,Low,2,251398,None
+C000923,58,Male,UK,Texas,Chennai,Analyst,1895030,363,2025-07-02,Current,Medium,4,116893,None
+C000924,31,Male,Germany,Maharashtra,Mumbai,Manager,1038640,385,2016-08-03,Savings,Low,1,161414,Closed
+C000925,46,Female,Canada,Karnataka,San Francisco,Doctor,1072080,355,2016-01-14,Current,Low,3,91262,None
+C000926,40,Female,Germany,California,Hyderabad,Manager,973979,747,2018-12-23,Premium,Low,1,299077,Closed
+C000927,30,Male,Canada,Texas,Bengaluru,Doctor,1627561,314,2016-09-08,Current,High,4,458142,Active
+C000928,25,Other,Germany,Maharashtra,Hyderabad,Manager,315421,761,2025-07-30,Savings,Low,5,56089,None
+C000929,31,Other,USA,California,San Francisco,Analyst,996678,686,2017-06-04,Current,Low,2,361320,Closed
+C000930,18,Female,UK,Tamil Nadu,Mumbai,Doctor,2405897,427,2022-11-04,Current,Low,4,222083,Active
+C000931,40,Female,Canada,California,Hyderabad,Developer,1708558,416,2025-05-22,Savings,Low,3,97744,Closed
+C000932,56,Male,Canada,California,Delhi,Doctor,2134981,590,2022-11-15,Premium,High,1,50938,None
+C000933,23,Other,India,Texas,Delhi,Engineer,2382073,857,2016-02-13,Premium,Low,5,427508,None
+C000934,60,Female,Germany,Karnataka,Bengaluru,Developer,2206855,864,2019-04-10,Savings,Low,4,70242,Active
+C000935,68,Female,Germany,California,Chennai,Doctor,1239258,819,2018-03-07,Current,Medium,3,166164,Active
+C000936,61,Male,India,California,Chennai,Engineer,410087,457,2023-11-12,Current,Medium,5,434934,Closed
+C000937,56,Female,UK,Karnataka,Hyderabad,Student,1314313,869,2025-12-01,Current,Low,4,439398,None
+C000938,69,Other,Germany,Karnataka,San Francisco,Student,1028623,712,2025-02-20,Current,Low,4,126094,None
+C000939,63,Male,Canada,Tamil Nadu,San Francisco,Analyst,1944218,566,2024-05-22,Premium,Low,3,111830,None
+C000940,23,Male,Germany,Tamil Nadu,San Francisco,Developer,2788431,456,2015-04-24,Premium,Medium,1,304784,Active
+C000941,19,Other,USA,California,San Francisco,Manager,1802069,491,2017-09-08,Premium,Medium,3,106622,Closed
+C000942,33,Other,Germany,Maharashtra,San Francisco,Engineer,1453286,384,2025-06-26,Savings,Low,5,459525,None
+C000943,25,Female,Canada,Tamil Nadu,Chennai,Teacher,1484735,568,2025-01-12,Savings,Low,4,447826,Active
+C000944,31,Female,India,California,London,Engineer,2035372,375,2020-06-15,Premium,Low,4,201741,Active
+C000945,58,Female,USA,Karnataka,Mumbai,Engineer,1049425,880,2022-01-29,Premium,Medium,1,184731,Active
+C000946,48,Other,Canada,Texas,Chennai,Teacher,2488372,560,2025-05-23,Savings,Low,1,285994,None
+C000947,51,Other,USA,Karnataka,London,Doctor,781457,522,2015-05-01,Current,Low,1,386547,Closed
+C000948,26,Female,UK,California,Bengaluru,Engineer,1761938,864,2022-04-24,Current,Low,4,233622,Closed
+C000949,43,Male,UK,Karnataka,Bengaluru,Manager,1478946,702,2016-02-26,Premium,Medium,5,168360,None
+C000950,68,Male,Germany,California,Delhi,Student,2801188,578,2024-02-24,Current,Low,5,205826,Active
+C000951,30,Other,UK,Maharashtra,San Francisco,Developer,569552,760,2016-11-16,Savings,High,3,312688,Active
+C000952,36,Other,Canada,Maharashtra,Delhi,Engineer,780876,484,2024-01-27,Current,Low,2,192561,None
+C000953,22,Male,UK,Maharashtra,Bengaluru,Developer,1618911,425,2015-02-09,Current,Low,3,117078,Active
+C000954,54,Female,USA,Texas,Chennai,Student,1489564,517,2020-11-29,Savings,Low,3,380529,Closed
+C000955,69,Other,India,Texas,San Francisco,Student,2125384,625,2024-02-14,Current,Low,1,425859,Active
+C000956,49,Male,UK,California,Chennai,Engineer,2199118,475,2021-09-29,Current,Low,2,307206,None
+C000957,36,Male,Canada,Tamil Nadu,Delhi,Doctor,849697,712,2015-06-01,Premium,High,1,181889,Closed
+C000958,19,Male,Germany,Tamil Nadu,London,Developer,2040966,608,2018-01-30,Current,Medium,4,46820,Closed
+C000959,67,Female,Germany,Texas,Chennai,Student,1551764,765,2020-07-13,Premium,High,1,447014,Active
+C000960,57,Male,India,Karnataka,Chennai,Developer,343604,442,2016-03-06,Current,Medium,4,123668,None
+C000961,23,Male,UK,Texas,Chennai,Manager,520163,565,2024-11-27,Savings,Low,3,44343,Active
+C000962,39,Other,Canada,California,Mumbai,Manager,1014451,441,2021-07-17,Current,Low,3,456881,None
+C000963,66,Other,Germany,California,San Francisco,Engineer,2488435,840,2017-09-12,Premium,Low,4,152084,Active
+C000964,67,Other,Germany,Karnataka,Chennai,Doctor,1542496,384,2018-12-16,Premium,Medium,2,350757,Closed
+C000965,65,Male,India,Tamil Nadu,Delhi,Engineer,1191186,313,2022-07-09,Savings,Low,4,103522,Active
+C000966,24,Female,USA,Texas,London,Analyst,2455567,620,2023-07-12,Current,Medium,2,449495,Closed
+C000967,24,Male,USA,Maharashtra,Delhi,Student,2902473,825,2017-04-11,Current,Low,3,226823,None
+C000968,61,Female,Canada,Tamil Nadu,Bengaluru,Student,749517,412,2017-09-12,Savings,Medium,2,144857,None
+C000969,48,Other,Canada,California,Mumbai,Doctor,796296,863,2015-12-11,Current,Low,2,213104,Closed
+C000970,45,Other,UK,Tamil Nadu,Delhi,Doctor,1850972,400,2015-07-21,Premium,Low,4,106676,Active
+C000971,30,Female,USA,Texas,Mumbai,Analyst,2847822,805,2020-10-25,Current,Low,1,343870,None
+C000972,25,Male,India,Tamil Nadu,Chennai,Analyst,1416432,544,2015-09-27,Premium,Low,2,467736,Closed
+C000973,62,Other,Germany,California,Delhi,Engineer,1222278,574,2020-07-21,Savings,Low,2,187259,Closed
+C000974,36,Other,Canada,Maharashtra,San Francisco,Engineer,695281,489,2020-08-23,Premium,Low,3,451989,Closed
+C000975,33,Male,UK,Tamil Nadu,Bengaluru,Teacher,1693160,766,2016-08-03,Savings,Low,4,180140,None
+C000976,29,Female,India,Karnataka,San Francisco,Developer,340826,660,2025-11-15,Current,Low,4,462818,None
+C000977,48,Male,India,Tamil Nadu,Hyderabad,Manager,1519110,533,2020-11-21,Premium,Low,2,411457,None
+C000978,24,Female,UK,California,Delhi,Manager,1771282,858,2017-11-20,Premium,Low,3,245517,None
+C000979,70,Female,UK,Maharashtra,Hyderabad,Developer,2798729,795,2016-04-06,Current,Low,1,82542,Active
+C000980,32,Other,USA,Maharashtra,Delhi,Engineer,1324952,891,2023-04-24,Premium,High,3,113164,Closed
+C000981,23,Male,Germany,Tamil Nadu,Mumbai,Manager,2585545,760,2025-09-30,Premium,Low,3,470565,Active
+C000982,43,Other,Germany,Maharashtra,Mumbai,Teacher,472385,893,2020-10-31,Premium,Low,5,69467,Active
+C000983,68,Female,Canada,Maharashtra,Mumbai,Engineer,334959,810,2025-05-25,Premium,Low,2,279300,Active
+C000984,57,Other,USA,Maharashtra,Delhi,Doctor,571021,601,2015-03-05,Current,Low,3,437784,Closed
+C000985,25,Male,Germany,Maharashtra,Chennai,Student,1777466,300,2015-07-24,Current,Low,3,416704,Closed
+C000986,60,Other,USA,Tamil Nadu,San Francisco,Doctor,898293,501,2019-11-05,Premium,High,3,119744,None
+C000987,48,Female,USA,California,Delhi,Student,711623,567,2025-04-27,Current,Low,2,300649,Active
+C000988,61,Female,Canada,Karnataka,San Francisco,Developer,1136791,556,2016-07-09,Current,Low,3,164905,None
+C000989,37,Other,Germany,Texas,Bengaluru,Student,2132461,398,2016-07-21,Premium,Low,3,269144,Closed
+C000990,63,Female,Germany,Maharashtra,Delhi,Student,2063728,720,2020-03-04,Savings,High,1,407008,Active
+C000991,23,Male,Canada,Maharashtra,London,Teacher,2734048,824,2019-03-09,Savings,Low,5,465222,Active
+C000992,21,Female,USA,California,San Francisco,Engineer,2241156,830,2020-02-29,Savings,Low,3,440103,Closed
+C000993,24,Female,Canada,Tamil Nadu,London,Doctor,2671641,793,2022-09-29,Current,Medium,1,393221,Closed
+C000994,61,Other,India,Karnataka,Hyderabad,Teacher,2657405,807,2016-07-12,Savings,Medium,2,162754,Closed
+C000995,37,Other,India,California,Hyderabad,Manager,1141796,417,2015-10-03,Savings,Low,1,277536,None
+C000996,33,Male,India,California,Chennai,Developer,2421497,754,2019-05-20,Savings,High,3,217104,Active
+C000997,29,Male,Canada,Maharashtra,London,Analyst,2141844,426,2019-11-06,Savings,Low,2,79284,Closed
+C000998,60,Male,USA,Texas,San Francisco,Manager,2592946,505,2020-05-04,Current,Low,1,313681,Active
+C000999,41,Other,UK,California,Delhi,Manager,750199,775,2019-09-04,Current,Low,3,244642,None
+C001000,54,Female,India,Texas,Mumbai,Engineer,2899950,755,2015-06-24,Current,High,4,467644,Closed

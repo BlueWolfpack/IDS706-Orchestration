@@ -1,0 +1,27 @@
+{
+  // Containerized dev setup: Python 3.12 + Node 20 + Docker-in-Docker so `make airflow`
+  // and `make start-mac` work from inside the container (VS Code: "Reopen in Container").
+  "name": "automl-research-lab (fraud pipeline assignment)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "containerEnv": {
+    "PYTHONPATH": "${containerWorkspaceFolder}:${containerWorkspaceFolder}/advanced"
+  },
+  "postCreateCommand": "pip install -r advanced/services/gateway/requirements.txt matplotlib pytest && pip install -e '.[dev]' && (cd frontend && npm install) && (test -f .env || cp .env.example .env)",
+  "forwardPorts": [5173, 8000, 8088, 5433],
+  "portsAttributes": {
+    "5173": { "label": "Frontend (agent graph)" },
+    "8000": { "label": "Gateway API" },
+    "8088": { "label": "Airflow UI" },
+    "5433": { "label": "Postgres warehouse" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-azuretools.vscode-docker", "ckolkman.vscode-postgres"]
+    }
+  }
+}

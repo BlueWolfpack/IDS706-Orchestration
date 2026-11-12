@@ -1,0 +1,238 @@
+{
+  "description": "SAMPLE FIXTURE — Judge revises once, then accepts. Numbers are illustrative only.",
+  "mock": true,
+  "steps": [
+    {
+      "delay_ms": 20,
+      "type": "session_created",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "scenario": "revise_loop", "note": "sample fixture session" }
+    },
+    {
+      "delay_ms": 30,
+      "type": "health",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": {
+        "services": {
+          "gateway": "ok",
+          "orchestrator": "ok",
+          "agent_service": "ok",
+          "harness": "ok",
+          "dataset_service": "ok",
+          "memory_service": "ok",
+          "tracking_service": "ok"
+        }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": { "lead": "data_scientist" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "data_scientist",
+      "payload": {
+        "lead": "data_scientist",
+        "status": "completed",
+        "summary": "SAMPLE: 18% positive class"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": { "lead": "hypothesis_generator", "experiment": 1 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": {
+        "lead": "hypothesis_generator",
+        "experiment_id": "e-1",
+        "model_family": "logistic_regression"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 60,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-1",
+        "note": "SAMPLE fixture metrics",
+        "validation_metrics": { "f1": 0.41, "precision": 0.58, "recall": 0.32 },
+        "train_metrics": { "f1": 0.44 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "lead": "judge", "experiment_id": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": {
+        "experiment_id": "e-1",
+        "action": "revise",
+        "observation": "SAMPLE: recall 0.32 low vs precision 0.58",
+        "hypothesis": "under-predicts minority class",
+        "next_action": "Explore: class weighting",
+        "edge": "new hypothesis"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "lead": "judge", "action": "revise", "loop_back": "hypothesis_generator" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "activity",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "message": "SAMPLE: Judge → Hypothesis Generator (revise loop)" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": { "lead": "hypothesis_generator", "experiment": 2, "motivated_by": "e-1" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "hypothesis_generator",
+      "payload": {
+        "lead": "hypothesis_generator",
+        "experiment_id": "e-2",
+        "model_family": "logistic_regression",
+        "hyperparameters": { "C": 1.0, "class_weight": "balanced" }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "experiment_id": "e-2" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "trial_started",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": { "experiment_id": "e-2" }
+    },
+    {
+      "delay_ms": 60,
+      "type": "trial_completed",
+      "source_service": "harness",
+      "source_agent": "experiment_runner",
+      "payload": {
+        "experiment_id": "e-2",
+        "note": "SAMPLE fixture metrics",
+        "validation_metrics": { "f1": 0.52, "precision": 0.41, "recall": 0.71 },
+        "train_metrics": { "f1": 0.55 }
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_completed",
+      "source_service": "orchestrator",
+      "source_agent": "ml_engineer",
+      "payload": { "lead": "ml_engineer", "status": "completed" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "budget_update",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "experiments_used": 2, "budget": 10, "best_val_f1": 0.52 }
+    },
+    {
+      "delay_ms": 40,
+      "type": "agent_started",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": { "lead": "judge", "experiment_id": "e-2" }
+    },
+    {
+      "delay_ms": 40,
+      "type": "verdict_issued",
+      "source_service": "orchestrator",
+      "source_agent": "judge",
+      "payload": {
+        "experiment_id": "e-2",
+        "action": "accept",
+        "observation": "SAMPLE: class weighting raised minority recall",
+        "next_action": "final holdout"
+      }
+    },
+    {
+      "delay_ms": 40,
+      "type": "holdout_evaluated",
+      "source_service": "dataset_service",
+      "source_agent": null,
+      "payload": {
+        "experiment_id": "e-2",
+        "metric": "f1",
+        "score": 0.48,
+        "note": "SAMPLE fixture holdout score"
+      }
+    },
+    {
+      "delay_ms": 30,
+      "type": "stop_reason",
+      "source_service": "orchestrator",
+      "source_agent": "meta_supervisor",
+      "payload": { "stop_reason": "accepted", "experiments_used": 2 }
+    },
+    {
+      "delay_ms": 20,
+      "type": "activity",
+      "source_service": "gateway",
+      "source_agent": null,
+      "payload": { "message": "SAMPLE fixture scenario 'revise_loop' complete", "done": true }
+    }
+  ]
+}

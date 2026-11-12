@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automl-contracts"
+version = "0.1.0"
+description = "Shared Pydantic contracts for AutoML Research Lab"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2.7,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27",
+  "pytest>=8.0",
+  "python-multipart>=0.0.9",
+  "uvicorn[standard]>=0.30",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["contracts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "advanced"]

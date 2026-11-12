@@ -1,0 +1,11 @@
+# Teaching Airflow image: official Airflow + pandas/sklearn for baseline prep.
+FROM apache/airflow:2.10.4-python3.11
+
+USER root
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends gcc g++ \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
+
+USER airflow
+RUN pip install --no-cache-dir "pandas>=2.0" "scikit-learn>=1.3" "numpy>=1.26" "matplotlib>=3.8"

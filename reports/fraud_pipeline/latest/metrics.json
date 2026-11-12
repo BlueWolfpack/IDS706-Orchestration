@@ -1,0 +1,73 @@
+{
+  "n_rows": 10000,
+  "n_features": 46,
+  "fraud_rate": 0.0306,
+  "test_rows": 2500,
+  "models": [
+    {
+      "accuracy": 0.9696,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.0304,
+      "threshold": 0.5,
+      "model": "majority_class_baseline",
+      "features": "behavioural + customer + merchant (no leaky score)"
+    },
+    {
+      "accuracy": 0.6052,
+      "balanced_accuracy": 0.5479,
+      "precision": 0.0376,
+      "recall": 0.4868,
+      "f1": 0.0697,
+      "roc_auc": 0.557,
+      "pr_auc": 0.0413,
+      "threshold": 0.5,
+      "model": "logistic_regression",
+      "features": "behavioural + customer + merchant (no leaky score)"
+    },
+    {
+      "accuracy": 0.9696,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5011,
+      "pr_auc": 0.0321,
+      "threshold": 0.5,
+      "model": "random_forest",
+      "features": "behavioural + customer + merchant (no leaky score)"
+    },
+    {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "threshold": 0.5,
+      "model": "leakage_check_fraud_probability_only",
+      "features": "fraud_probability only (excluded from real models)"
+    }
+  ],
+  "feature_importance": {
+    "distance_from_home": 0.0435,
+    "geo_latitude": 0.0391,
+    "spending_change": 0.0381,
+    "geo_longitude": 0.0359,
+    "credit_score": 0.0358,
+    "avg_monthly_balance": 0.0357,
+    "average_spending_30d": 0.0356,
+    "login_duration": 0.035,
+    "customer_tenure_days": 0.0338,
+    "amount_to_avg_30d": 0.0335,
+    "annual_income": 0.0331,
+    "merchant_risk": 0.033,
+    "amount": 0.0325,
+    "log_amount": 0.0321,
+    "age": 0.0309
+  }
+}
